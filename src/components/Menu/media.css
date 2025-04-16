@@ -1,0 +1,114 @@
+@keyframes openingMenu {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .navigationGeneric, .navigationHome {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .navigationGeneric > nav, .navigationHome > nav {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 0;
+        background: linear-gradient(#0002fe, #0058b0);
+        height: 100vh; 
+        z-index: 3;
+    }
+    .navigationGeneric > nav ul, .navigationHome > nav ul {
+        /* display: none; */
+
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        animation: openingMenu .4s;
+        height: 50%;
+    }
+
+    #menuIcon {
+        display: block;
+    }
+
+    .menuIcon {
+        display: flex;
+    }
+
+    .genericLogoArea, .logoArea {
+        width: 30%;
+    }
+
+    #logoCDI {
+        width: 40px;
+    }
+}
+
+
+
+@media screen and (min-width: 1280px) {
+    .navigationHome nav ul li a, .navigationGeneric nav ul li a{
+        font-size: 1.1rem;
+    }
+
+    .navigationHome nav ul, .navigationGeneric nav ul {
+        gap: 2rem;
+    }
+
+    .navigationHome nav ul, .navigationHome nav {
+        margin-left: 5rem;
+    }
+
+    .navigationGeneric nav ul, .navigationGeneric nav {
+        margin-left: 5rem;
+    }
+
+    .navigationGeneric, .navigationHome {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1480px) {
+    .navigationHome, .navigationGeneric {
+        width: 100%;
+    }
+
+    .navigationHome nav ul, .navigationGeneric nav ul {
+        gap: 2.5rem;
+    }
+    .navigationHome nav ul li a, .navigationGeneric nav ul li a{
+        font-size: 1.2rem;
+    }
+
+    .navigationHome nav ul, .navigationHome nav {
+        margin-left: 5.5rem;
+    }
+
+    .navigationGeneric nav ul, .navigationGeneric nav {
+        margin-left: 5.5rem;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .navigationHome nav ul, .navigationHome nav {
+        margin-left: 7rem;
+    }
+
+    .navigationGeneric nav ul, .navigationGeneric nav {
+        margin-left: 7rem;
+    }
+}

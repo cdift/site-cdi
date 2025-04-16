@@ -1,0 +1,161 @@
+#bandeco {
+    /* height: 150vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+    /* justify-content: center; */
+}
+
+#bandeco > .title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30%;
+    font-family: 'Roboto', sans-serif;
+    color: #0108F8;
+}
+
+#bandeco > .title h1, #bandeco > .title h2{
+    font-weight: 600;
+}
+
+#bandeco > .content {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#bandeco > .content .horarios {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 80vw;
+    max-width: 55rem;
+    min-width: 350px;
+    /* height: 24rem; */
+    position: relative;
+    padding: 30px 60px;
+}
+
+.bandeco-box {
+    background-color: white;
+    border: 1px solid #0108F8;
+    border-radius: 20px;
+    padding: 22px 22px;
+    width: 40%;
+    height: 180px;
+    min-width: 220px;
+    max-width: 240px;
+}
+
+.bandeco-horarios {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* gap: 1rem; */
+    justify-content: space-between;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+#bandeco .horarios h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #0108F8;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+#bandeco .horarios h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #0108F8;
+}
+
+#bandeco .horarios p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2rem;
+    font-size: 1rem;
+}
+
+#iframeCardapio {
+    width: 100%;
+}
+
+#intercampi #penguin{
+    position: absolute;
+    width: 200px;
+    top: -152px;
+    right: 100px;
+}
+
+#intercampi {
+    position: relative;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #E4E5FF;
+    margin-top: 13rem;
+}
+
+#intercampi > article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#intercampi > article > .text-content > h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #0108F8;
+    text-align: center;
+}
+
+#intercampi > article > .text-content > p {
+    text-align: justify;
+    width: 90%;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+#intercampi > article > .text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+#intercampi > article > .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+#more {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#more .title h2 {
+    margin-bottom: 2rem;
+}
+
+.video-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

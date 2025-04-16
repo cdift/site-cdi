@@ -1,0 +1,94 @@
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Estilos da home */
+
+.homeBackground {
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to top, #00cfff, #0058b0, #0002fe);
+    /* background: url('../../assets/images/capaDegradeHome.png') no-repeat; */
+    /* background-size: contain; */
+    height: calc(100vw/1.85);
+    min-width: 1024px;
+    min-height: calc(1024px/1.85);
+    position: relative;
+}
+
+.homeBackground svg {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+.homeContentArea {
+    height: calc((100vw/1.85)*0.55);
+    min-height: calc((1024px/1.85)*0.55);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+}
+
+.homeContentArea h1 {
+    font-size: 4rem;
+}
+
+.homeContentArea h2 {
+    font-size: 1.8rem;
+}
+.homeContentArea h3, .genericContentArea h3 {
+    font-size: 1.2rem;
+    margin-bottom: .8rem;
+}
+
+/* Estilos genericos */
+
+.genericBackground {
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to top, #00cfff, #0058b0, #0002fe);
+    /* background: url('../../assets/images/capaDegradeGenerica.png') no-repeat; */
+    /* background-size: contain; */
+    height: calc(100vw/2.3);
+    margin: auto;
+    position: relative;
+}
+
+.genericBackground svg {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+.genericContentArea{
+    height: calc((100vw/1.85)*0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.genericContentArea h1 {
+    font-size: 3.5rem;
+}
+
+.genericContentArea h2 {
+    font-size: 1.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.alignCenter {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#penguim {
+    width: calc(20vw);
+    min-width: calc(1024px*0.2);
+}

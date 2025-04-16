@@ -1,0 +1,87 @@
+.imagem-evento, .info-evento {
+    display: flex;
+}
+
+.imagem-evento {
+    justify-content: center;
+    align-items: center;
+}
+
+.info-evento {
+    flex-direction: column;
+}
+
+.textBody {
+    div {
+        font-size: 14px;
+        margin-top: -5px;
+    }
+}
+
+.circleImg {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: rgb(207, 207, 207);
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.card-evento {
+    min-width: 540px;
+    max-width: 800px;
+    width: 80%;
+    background-color: #ffffff;
+    border-radius: 7px;
+    border: 1px solid #8e8ffe;
+    display: flex;
+    padding: 20px 40px 20px 40px;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}	
+
+.subTitle {
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+    margin-top: 5px;
+
+    span{
+        font-weight: normal;
+    }
+}	
+
+.btn-primary{
+    background-color: blue;
+}
+
+.event-details > p {
+    width: 90%;
+    line-height: 1rem;
+}
+
+#event-description {
+    line-height: 1.5rem;
+}
+
+@media screen and (max-width: 700px) {
+    .card-evento {
+        flex-direction: column;
+        flex-flow: column-reverse;
+        min-width: 320px;
+        width: 90%;
+    }
+
+    .event-details > p {
+        width: 100%;
+    }
+}

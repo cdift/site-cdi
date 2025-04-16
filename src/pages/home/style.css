@@ -1,0 +1,218 @@
+/* Gerais */
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+#cdi h1,
+#cursos h1,
+#equipe h1 {
+    text-align: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: #0108F8;
+    font-weight: 600;
+}
+
+#cursos h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #0108F8;
+    font-weight: 600;
+}
+
+#conceitos h2,
+#equipe h2 {
+    text-align: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: #0108F8;
+    font-weight: 600;
+}
+
+/* CDI */
+
+#cdi {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cdi h1 {
+    margin-bottom: 5%;
+}
+
+#cdi > p {
+    margin-inline: 10%;
+    width: 80%;
+    max-width: 1000px;
+}
+
+#conceitos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1000px;
+    margin-top: 100px;
+}
+
+.conceito {
+    background-color: #E4E5FF;
+    border: 1px solid #0108F8;
+    border-radius: 20px;
+    width: 300px;
+    height: 280px;
+
+    padding: 25px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.conceito > p {
+    width: 80%;
+    margin-top: 15px;
+    text-align: center;
+    height: 160px;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.conceito-valores {
+    background-color: #E4E5FF;
+    border: 1px solid #0108F8;
+    border-radius: 20px;
+    width: 300px;
+    height: 280px;
+
+    padding: 25px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#lista-valores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    height: 220px;
+}
+
+#carousel {
+    margin-inline: 5%;
+    width: 80vw;
+    margin-top: 100px;
+}
+
+/* Cursos */
+
+#cursos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5rem;
+    margin-top: 7rem;
+}
+
+#bsi,
+#tads {
+    background-color: #E4E5FF;
+    border: 1px solid #0108F8;
+    border-radius: 40px;
+    width: 80vw;
+    padding: 60px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudo-curso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+}
+
+.curso_texto {
+    width: 80%;
+}
+
+#bsi > p,
+#tads > p {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#tads .curso_texto > h2 {
+    min-width: 600px;
+}
+
+.detalhes-curso {
+    margin-top: 2rem;
+}
+
+.imagem-curso {
+    width: 35%;
+}
+
+.botao {
+    width: 80%;
+    max-width: 400px;
+    margin-top: 2rem;
+}
+
+/* Equipe */
+
+#equipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 10rem 0;
+}
+
+.areas {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 6rem !important;
+    column-gap: 4rem;
+    gap: 4rem;
+    width: 70%;
+    justify-content: center;
+
+    margin-top: 5rem;
+}
+
+.area {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 400px;
+}
+
+.area-title{
+    margin-bottom: 3rem;
+}
+
+.area-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    max-width: 400px;
+    gap: 3rem;
+}

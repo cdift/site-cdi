@@ -1,0 +1,84 @@
+.menuIcon {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+
+    /* position: absolute; */
+}
+
+#menuIcon {
+    display: none;
+}
+
+.menuMenu {
+    margin: 0 auto;
+    /* min-width: 1024px; */
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menuHeader {
+    display: flex;
+    justify-content: space-between;
+    height: 7rem;
+}
+
+.genericLogoArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+.logoArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+#logoCDI {
+    width: calc(100vw*.08);
+    min-width: calc(1024px*.08);
+    max-width: calc(1200px*.08);
+}
+
+.navigationHome, .navigationGeneric {
+    width: 80%;
+}
+
+.navigationHome nav ul, .navigationHome nav {
+    height: 100%;
+    margin-left: 2rem;
+}
+
+.navigationGeneric nav ul, .navigationGeneric nav {
+    height: 100%;
+    margin-left: 2rem;
+}
+
+.navigationHome nav ul, .navigationGeneric nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.navigationHome nav ul li, .navigationGeneric nav ul li {
+    list-style: none;
+}
+
+.navigationHome nav ul li a, .navigationGeneric nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.05rem;
+}
+
+.index {
+    border: 2px solid rgb(21, 136, 243);
+    padding: 10px;
+    border-radius: 15px;
+}

@@ -1,0 +1,247 @@
+@media screen and (max-width: 500px) {
+    .homeContentArea h2 {
+        font-size: 1.6rem;
+    } 
+
+     .homeContentArea h3 {
+        font-size: 1.2rem;
+        margin-bottom: .8rem;
+    }
+
+    .homeContentArea h1 {
+        font-size: 2.8rem;
+    }
+
+    .genericContentArea h1 {
+        font-size: 2.5rem;
+        width: 90%;
+    }
+
+    .genericContentArea h2 {
+        text-align: center;
+        font-size: 1.2rem;
+        width: 90%;
+    }
+
+    .homeBackground article {
+        height: 50%;
+    } 
+
+    .genericBackground {
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+    }
+
+    .genericBackground article {
+        height: 100%;
+    }
+
+    .homeBackground {
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        min-width: 100vw;
+    }
+
+    .homeContentArea {
+        justify-content: center;
+    }
+
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 7rem;
+    }
+
+    #penguim {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
+    .homeContentArea h2 {
+        font-size: 1.6rem;
+    } 
+
+     .homeContentArea h3 {
+        font-size: 1.2rem;
+        margin-bottom: .8rem;
+    }
+
+    .homeContentArea h1 {
+        font-size: 2.8rem;
+    }
+
+    .genericContentArea h1 {
+        font-size: 2.5rem;
+    }
+
+    .genericContentArea h2 {
+        text-align: center;
+        font-size: 1.2rem;
+        width: 90%;
+    }
+
+    .homeBackground article {
+        height: 50%;
+    } 
+
+    .genericBackground {
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+    }
+
+    .genericBackground article {
+        height: 100%;
+    }
+
+    .homeBackground {
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        min-width: 100vw;
+    }
+
+    .homeContentArea {
+        justify-content: center;
+    }
+
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+
+    #penguim {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+    .genericBackground {
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+    }
+
+    .genericBackground article {
+        height: 100%;
+    }
+
+    .homeBackground {
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        min-width: 100vw;
+    }
+
+    .homeBackground article {
+        height: 70%;
+    } 
+
+    .homeContentArea {
+        justify-content: center;
+    }
+
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    #penguim {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .homeContentArea {
+        height: calc((100vw/1.85)*0.6);
+        min-height: calc((1024px/1.85)*0.6);
+    }
+    .homeContentArea h1 {
+        font-size: 4.3rem;
+    }
+
+    
+    .homeContentArea h2 {
+        font-size: 2.1rem;
+    }
+
+    .homeContentArea h3 {
+        font-size: 1.5rem;
+        margin-bottom: .8rem;
+    }
+
+    .genericContentArea h1 {
+        font-size: 4.3rem;
+    }
+
+    .genericContentArea h2 {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .genericContentArea {
+        height: calc((100vw/1.85)*0.3);
+        min-height: calc((1024px/1.85)*0.3);
+    }
+
+    .homeContentArea h1 {
+        font-size: 4.4rem;
+    }
+    
+    .homeContentArea h2 {
+        font-size: 2.2rem;
+    }
+    .homeContentArea h3 {
+        font-size: 1.6rem;
+        margin-bottom: .5rem;
+    }
+
+    .genericContentArea h1 {
+        font-size: 4.1rem;
+    }
+
+    .genericContentArea h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .genericContentArea {
+        height: calc((100vw/1.85)*0.3);
+        min-height: calc((1024px/1.85)*0.3);
+    }
+
+    .homeContentArea h1 {
+        font-size: 4.7rem;
+    }
+    
+    .homeContentArea h2 {
+        font-size: 2.5rem;
+    }
+
+    .homeContentArea h3 {
+        font-size: 1.9rem;
+        margin-bottom: .5rem;
+    }
+
+    .genericContentArea h1 {
+        font-size: 4.7rem;
+    }
+    
+    .genericContentArea h2 {
+        font-size: 2.5rem;
+    }
+}
