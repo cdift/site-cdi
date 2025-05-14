@@ -27,21 +27,21 @@ const Professores = () => {
 
             <CardProfessores nome="Guilherme Palermo Coelho" pesquisa="Computação bio-inspirada, otimização (mono e multi-objetivo) e redes neurais artificiais, ensembles e agrupamento de dados" lattes="http://lattes.cnpq.br/0597865875425201" foto="https://www3.ft.unicamp.br/sites/default/files/fotosDocentes/GuilhermePCoelho_quad.JPG" alt="Foto Prof. Guilherme"></CardProfessores>
 
-            <CardProfessores nome="Ivan Luiz Marques Ricarte" pesquisa="" lattes="http://lattes.cnpq.br/4372943322993518" foto="https://www3.ft.unicamp.br/sites/default/files/fotosDocentes/ivan_ricarte.JPG" alt="Foto Prof. Ivan"></CardProfessores>
+            <CardProfessores nome="Ieda Geriberto Hidalgo" pesquisa="" lattes="http://lattes.cnpq.br/1913450752136533" foto="https://www.ft.unicamp.br/sites/default/files/fotosDocentes/ieda_0.jpg" alt="Foto Prof. Ieda"></CardProfessores>
 
             <CardProfessores nome="João Roberto Bertini Junior" pesquisa="" lattes="http://lattes.cnpq.br/1627235547325264" foto="https://www3.ft.unicamp.br/sites/default/files/fotosDocentes/bertini.png" alt="Foto Prof. Bertini"></CardProfessores>
 
             <CardProfessores nome="Lívia Couto Ruback Rodrigues" pesquisa="Redes Complexas, Análise de Redes Sociais, Desinformação, Computação Social" lattes="http://lattes.cnpq.br/5717311679602180" foto="https://www3.ft.unicamp.br/sites/default/files/fotosDocentes/foto_livia.png" alt="Foto Prof. Lívia"></CardProfessores>
 
-            <CardProfessores nome="Luis Augusto Angelotti Meira" pesquisa="" lattes="http://lattes.cnpq.br/7266558656801036" foto="https://www3.ft.unicamp.br/sites/default/files/fotosDocentes/FotoMeira.jpg" alt="Foto Prof. Luis"></CardProfessores>
+            <CardProfessores nome="Luis Augusto Angelotti Meira" pesquisa="" lattes="http://lattes.cnpq.br/7266558656801036" foto="https://www.ft.unicamp.br/sites/default/files/fotosDocentes/Meira.jpg" alt="Foto Prof. Luis"></CardProfessores>
 
             <CardProfessores nome="Luiz Camolesi Júnior" pesquisa="" lattes="http://lattes.cnpq.br/9002330620493052" foto="https://www3.ft.unicamp.br/sites/default/files/fotosDocentes/camolesi_0.jpg" alt="Foto Prof. Luiz"></CardProfessores>
+
+            <CardProfessores nome="Marco Antonio G. De Carvalho" pesquisa="" lattes="https://lattes.cnpq.br/6366443994619479" foto="https://www.ft.unicamp.br/sites/default/files/fotosDocentes/foto-magic_0.jpeg" alt="Foto Prof. Marco"></CardProfessores>
 
             <CardProfessores nome="Marcos Augusto Francisco Borges" pesquisa="" lattes="http://lattes.cnpq.br/8433486304141432" foto="https://www3.ft.unicamp.br/sites/default/files/fotosDocentes/borges.jpg" alt="Foto Prof. Marcos"></CardProfessores>
 
             <CardProfessores nome="Marli De Freitas Gomes Hernandez" pesquisa="" lattes="http://lattes.cnpq.br/2014304463458284" foto="https://www3.ft.unicamp.br/sites/default/files/fotosDocentes/marli.png" alt="Foto Prof. Marli"></CardProfessores>
-
-            <CardProfessores nome="Nusrat Jahan Lisa" pesquisa="" lattes="https://lattes.cnpq.br/1412300855471191" foto="https://www3.ft.unicamp.br/sites/default/files/fotosDocentes/NusratJahanLisa.jpg" alt="Foto Prof. Nusrat"></CardProfessores>
 
             <CardProfessores nome="Plínio Roberto Souza Vilela" pesquisa="Teste de Software, Engenharia de Software, Algoritmos para Roteamento de Veículos" lattes="http://lattes.cnpq.br/3674036702112123" foto="https://www3.ft.unicamp.br/sites/default/files/fotosDocentes/photoPlinio.JPG" alt="Foto Prof. Plínio"></CardProfessores>
 

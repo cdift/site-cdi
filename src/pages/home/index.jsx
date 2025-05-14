@@ -73,6 +73,21 @@ const members = [
           avatarUrl:
             "/assets/images/membros/assuntos_academicos/sean.jpeg",
         },
+        {
+          nome: "Gabriela",
+          avatarUrl:
+            "/assets/images/membros/assuntos_academicos/gabriela.jpeg",
+        },
+        {
+          nome: "Samuel",
+          avatarUrl:
+            "/assets/images/membros/assuntos_academicos/samuel.jpeg",
+        },
+        {
+          nome: "Thiago",
+          avatarUrl:
+            "/assets/images/membros/assuntos_academicos/thiago.jpeg",
+        },
       ],
     },
     {
@@ -97,6 +112,26 @@ const members = [
           avatarUrl:
             "/assets/images/membros/eventos/joao.jpeg",
         },
+        {
+          nome: "Felipe Amadio",
+          avatarUrl:
+            "/assets/images/membros/eventos/felipe amadio.jpeg",
+        },
+        {
+          nome: "Gabs",
+          avatarUrl:
+            "/assets/images/membros/eventos/gabs.jpeg",
+        },
+        {
+          nome: "Rafael Ozorio",
+          avatarUrl:
+            "/assets/images/membros/eventos/rafael ozorio.jpeg",
+        },
+        {
+          nome: "Raissa Souza",
+          avatarUrl:
+            "/assets/images/membros/eventos/raissa souza.jpeg",
+        },
       ],
     },
     {
@@ -113,6 +148,26 @@ const members = [
         {
           nome: "Nathália",
           avatarUrl: "/assets/images/membros/financas/nathalia.png",
+        },
+        {
+          nome: "Adriano",
+          avatarUrl: "/assets/images/membros/financas/adriano.jpeg",
+        },
+        {
+          nome: "Isadora Celestino",
+          avatarUrl: "/assets/images/membros/financas/isadora celestino.jpeg",
+        },
+        {
+          nome: "João Guilherme",
+          avatarUrl: "/assets/images/membros/financas/joao guilherme.jpeg",
+        },
+        {
+          nome: "João Paulo",
+          avatarUrl: "/assets/images/membros/financas/joao paulo.jpg",
+        },
+        {
+          nome: "Maria Clara Paulini",
+          avatarUrl: "/assets/images/membros/financas/maria clara paulini.jpeg",
         },
       ],
     },
@@ -132,6 +187,26 @@ const members = [
           nome: "Samuel Rodrigues",
           avatarUrl:
             "/assets/images/membros/recursos_humanos/samuel.png",
+        },
+        {
+          nome: "Matheus Vitorio",
+          avatarUrl:
+            "/assets/images/membros/recursos_humanos/matheus vitorio.jpeg",
+        },
+        {
+          nome: "Augusto Carneiro",
+          avatarUrl:
+            "/assets/images/membros/recursos_humanos/augusto carneiro.jpeg",
+        },
+        {
+          nome: "Henrique",
+          avatarUrl:
+            "/assets/images/membros/recursos_humanos/henrique.jpeg",
+        },
+        {
+          nome: "Maria Clara Muharem",
+          avatarUrl:
+            "/assets/images/membros/recursos_humanos/maria clara muharem.jpeg",
         },
       ],
     },
@@ -157,6 +232,31 @@ const members = [
           avatarUrl:
             "/assets/images/membros/marketing/marcelo.png",
         },
+        {
+          nome: "Daniel",
+          avatarUrl:
+            "/assets/images/membros/marketing/daniel.jpeg",
+        },
+        {
+          nome: "Maria Luiza",
+          avatarUrl:
+            "/assets/images/membros/marketing/maria luiza.jpeg",
+        },
+        {
+          nome: "Nicolas",
+          avatarUrl:
+            "/assets/images/membros/marketing/nicolas.jpeg",
+        },
+        {
+          nome: "Renan",
+          avatarUrl:
+            "/assets/images/membros/marketing/renan.jpeg",
+        },
+        {
+          nome: "Wesley",
+          avatarUrl:
+            "/assets/images/membros/marketing/wesley.jpeg",
+        },
       ],
     },
     {
@@ -173,6 +273,22 @@ const members = [
         {
           nome: "Davie Schimidt",
           avatarUrl: "/assets/images/membros/projetos/davie.png",
+        },
+        {
+          nome: "Rafael Suetsugu",
+          avatarUrl: "/assets/images/membros/projetos/Rafael-Suetsugu.JPG",  
+        },
+        {
+          nome: "Gabriel Morais",
+          avatarUrl: "/assets/images/membros/projetos/Gabriel-Morais.jpg",  
+        },
+        {
+          nome: "Pedro Kenwa",
+          avatarUrl: "/assets/images/membros/projetos/pedro kenwa.jpeg",  
+        },
+        {
+          nome: "Isadora Viveiros",
+          avatarUrl: "/assets/images/membros/projetos/isadora viveiros.jpeg",  
         },
       ],
     },
