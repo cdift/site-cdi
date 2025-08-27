@@ -17,8 +17,8 @@ const Header = ({ title = "", content = "" }) => {
           <div className={title == '' && content == '' ? "homeContentArea" : "genericContentArea"}>
             <article>
               <div className={title == '' && content == '' ? "" : "hidden"}>
-                <h3 className="fw-medium">Nós somos a</h3>
-                <h2 className="fw-semibold">Comissão Discente de</h2>
+                <h3 className="fw-medium">Nós somos o</h3>
+                <h2 className="fw-semibold">Centro Acadêmico de</h2>
                 <h1 className="fw-bold">INFORMÁTICA</h1>
                 <h3 className="fw-semibold">da Faculdade de Tecnologia da UNICAMP</h3>
               </div>
