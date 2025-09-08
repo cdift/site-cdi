@@ -37,7 +37,8 @@ const members = [
       members: [
         {
           nome: "Duda Gomes",
-          avatarUrl: "/assets/images/membros/presidencia/duda.jpeg",
+          avatarUrl: "/assets/images/membros/presidencia/duda.jpeg", isPresidente: true,
+      
         },
         {
           nome: "Filé",
@@ -52,6 +53,7 @@ const members = [
           nome: "Phillipi Poloni",
           avatarUrl:
             "/assets/images/membros/assuntos_academicos/salsixa.jpg",
+            isPresidente: true,
         },
         {
           nome: "Moskitao",
@@ -85,6 +87,7 @@ const members = [
         {
           nome: "Leonardo Bonfá",
           avatarUrl: "/assets/images/membros/eventos/leo.jpg",
+          isPresidente: true,
         },
         {
           nome: "Lucas de Oliveira",
@@ -129,6 +132,7 @@ const members = [
         {
           nome: "Marcos",
           avatarUrl: "/assets/images/membros/financas/Marcos.jpg",
+          isPresidente: true,
         },
         {
           nome: "Beatriz Galvao",
@@ -167,6 +171,7 @@ const members = [
           nome: "Laura",
           avatarUrl:
             "/assets/images/membros/recursos_humanos/laura.jpg",
+            isPresidente: true,
         },
         {
           nome: "Daniel Rosell",
@@ -205,6 +210,7 @@ const members = [
         {
           nome: "Lucas Mota",
           avatarUrl: "/assets/images/membros/marketing/baianinho.jpg",
+          isPresidente: true,
         },
         {
           nome: "Bruno Corrêa",
@@ -254,6 +260,7 @@ const members = [
         {
           nome: "Raissa",
           avatarUrl: "/assets/images/membros/projetos/raissa.png",
+          isPresidente: true,
         },
         {
           nome: "Guilherme Ramalho",
@@ -287,14 +294,14 @@ const members = [
     <>
       <Header></Header>
       <div id="cdi">
-        <h1 className="titles-h2">O que é a CDI?</h1>
+        <h1 className="titles-h2">O que é o CDI?</h1>
         <p>
           Além de ser um canal oficial de comunicação entre os alunos e os
           docentes, organizamos uma série de eventos como: cursos, palestras e
           visitas técnicas em parceria com a comunidade e com empresas tech.
           <br></br>
           Nós trabalhamos para que sua jornada na Universidade seja aproveitada
-          da melhor forma possível! Conte com a CDI durante seu ano letivo para
+          da melhor forma possível! Conte com o CDI durante seu ano letivo para
           tirar dúvidas e sugerir ideias.
         </p>
         <div id="conceitos">
@@ -435,7 +442,10 @@ const members = [
                 </div>
                 <div className="area-members">
                   {area.members.map((member) => (
-                    <div className="membro" key={member.nome}>
+                    <div
+      className={`membro ${member.isPresidente ? 'membro-presidente' : ''}`}
+      key={member.nome}
+    >
                       <AvatarHome
                         src={member.avatarUrl}
                         alt={"Membro da CDI " + member.nome}

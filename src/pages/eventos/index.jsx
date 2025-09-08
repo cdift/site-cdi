@@ -63,7 +63,7 @@ const Eventos = () => {
           Eventos já realizados
         </h2>
         <p>
-          A CDI é campeã em proporcionar experiências ÚNICAS e TRANSFORMADORAS.
+          O CDI é campeão em proporcionar experiências ÚNICAS e TRANSFORMADORAS.
           Acreditamos no poder da vivência a cima de tudo e por isso sempre nos
           preocupamos em preparar atividades imersivas aos alunos.
         </p>

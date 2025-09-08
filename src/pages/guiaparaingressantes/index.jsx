@@ -9,7 +9,7 @@ const GuiaParaIngressantes = () => {
         <>
             <Header
                 title='Guia para ingressantes'
-                content='Chegou no campus e se sentiu perdido? A CDI te ajuda!'
+                content='Chegou no campus e se sentiu perdido? O CDI te ajuda!'
             />
             <div className="mapadocampus">
                 <div id="title-map">
@@ -51,7 +51,7 @@ const GuiaParaIngressantes = () => {
                     
                 />
                 <Bigcard button_text={"Clique para saber mais"} cardtitle={"Grupos de matérias"}
-                    text={"Pensando em facilitar a sua vida, caro aluno, a CDI criou um grupo no WhatsApp para cada matéria"}
+                    text={"Pensando em facilitar a sua vida, caro aluno, o CDI criou um grupo no WhatsApp para cada matéria"}
                     link={"https://chat.whatsapp.com/JdQ4GFmHM5LKHYA8sz1i23"}
                 />
 
