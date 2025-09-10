@@ -67,12 +67,12 @@ const members = [
         {
           nome: "Hugo Strassa",
           avatarUrl:
-            "/assets/images/membros/assuntos_academicos/hugo.jpeg",
+            "/assets/images/membros/assuntos_academicos/Hugo.jpeg",
         },
         {
           nome: "Matheus Mastelini",
           avatarUrl:
-            "/assets/images/membros/assuntos_academicos/matheus.jpg",
+            "/assets/images/membros/assuntos_academicos/Matheus.jpg",
         },
 
       ],
@@ -282,7 +282,7 @@ const members = [
         },
         {
           nome: "Kaue Samuel Oliveira",
-          avatarUrl: "/assets/images/membros/projetos/kaue.jpeg",  
+          avatarUrl: "/assets/images/membros/projetos/Kaue.jpeg",  
         },
       ],
     },
