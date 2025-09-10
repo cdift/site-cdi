@@ -36,12 +36,12 @@ const members = [
       area: "Presidência",
       members: [
         {
-          nome: "Duda Gomes",
+          nome: "Maria Eduarda Gomes",
           avatarUrl: "/assets/images/membros/presidencia/duda.jpeg", isPresidente: true,
       
         },
         {
-          nome: "Filé",
+          nome: "Matheus Nascimento",
           avatarUrl: "/assets/images/membros/presidencia/file.jpg",
         },
       ],
@@ -56,29 +56,25 @@ const members = [
             isPresidente: true,
         },
         {
-          nome: "Moskitao",
+          nome: "João Pedro Mamede",
           avatarUrl: "/assets/images/membros/assuntos_academicos/moskitao.jpeg",
         },
         {
-          nome: "Sean Torres",
-          avatarUrl:
-            "/assets/images/membros/assuntos_academicos/sean.jpeg",
-        },
-        {
-          nome: "Gabriela",
+          nome: "Gabriela Nogueira",
           avatarUrl:
             "/assets/images/membros/assuntos_academicos/gabriela.jpeg",
         },
         {
-          nome: "Samuel",
+          nome: "Hugo Strassa",
           avatarUrl:
-            "/assets/images/membros/assuntos_academicos/samuel.jpeg",
+            "/assets/images/membros/assuntos_academicos/hugo.jpeg",
         },
         {
-          nome: "Thiago",
+          nome: "Matheus Mastelini",
           avatarUrl:
-            "/assets/images/membros/assuntos_academicos/thiago.jpeg",
+            "/assets/images/membros/assuntos_academicos/matheus.jpg",
         },
+
       ],
     },
     {
@@ -100,17 +96,12 @@ const members = [
             "/assets/images/membros/eventos/gabriel.jpeg",
         },
         {
-          nome: "João Pedro Calsavara",
-          avatarUrl:
-            "/assets/images/membros/eventos/joao.jpeg",
-        },
-        {
           nome: "Felipe Amadio",
           avatarUrl:
             "/assets/images/membros/eventos/felipe amadio.jpeg",
         },
         {
-          nome: "Gabs",
+          nome: "Gabriel de Paula",
           avatarUrl:
             "/assets/images/membros/eventos/gabs.jpeg",
         },
@@ -124,13 +115,24 @@ const members = [
           avatarUrl:
             "/assets/images/membros/eventos/raissa souza.jpeg",
         },
+        {
+          nome: "Erik Amorim",
+          avatarUrl:
+            "/assets/images/membros/eventos/Erik.jpeg",
+        },
+        {
+          nome: "Thiago Yuiti",
+          avatarUrl:
+            "/assets/images/membros/eventos/Thiago.jpeg",
+        },
+        
       ],
     },
     {
       area: "Finanças",
       members: [
         {
-          nome: "Marcos",
+          nome: "Marcos Vinicius Alonso",
           avatarUrl: "/assets/images/membros/financas/Marcos.jpg",
           isPresidente: true,
         },
@@ -139,11 +141,11 @@ const members = [
           avatarUrl: "/assets/images/membros/financas/beatriz.jpeg",
         },
         {
-          nome: "Nathália",
+          nome: "Nathália Ferrett",
           avatarUrl: "/assets/images/membros/financas/nathalia.png",
         },
         {
-          nome: "Adriano",
+          nome: "Adriano Kenzo Camargo",
           avatarUrl: "/assets/images/membros/financas/adriano.jpeg",
         },
         {
@@ -151,11 +153,11 @@ const members = [
           avatarUrl: "/assets/images/membros/financas/isadora celestino.jpeg",
         },
         {
-          nome: "João Guilherme",
+          nome: "João Guilherme Fernandes",
           avatarUrl: "/assets/images/membros/financas/joao guilherme.jpeg",
         },
         {
-          nome: "João Paulo",
+          nome: "João Paulo Stradioto",
           avatarUrl: "/assets/images/membros/financas/joao paulo.jpg",
         },
         {
@@ -168,7 +170,7 @@ const members = [
       area: "Recursos Humanos",
       members: [
         {
-          nome: "Laura",
+          nome: "Laura Russo",
           avatarUrl:
             "/assets/images/membros/recursos_humanos/laura.jpg",
             isPresidente: true,
@@ -176,6 +178,7 @@ const members = [
         {
           nome: "Daniel Rosell",
           avatarUrl: "/assets/images/membros/recursos_humanos/daniel.jpg",
+          isPresidente: true,
         },
         {
           nome: "Samuel Rodrigues",
@@ -193,7 +196,7 @@ const members = [
             "/assets/images/membros/recursos_humanos/augusto carneiro.jpeg",
         },
         {
-          nome: "Henrique",
+          nome: "Henrique Carvalho de Mello",
           avatarUrl:
             "/assets/images/membros/recursos_humanos/henrique.jpeg",
         },
@@ -213,11 +216,6 @@ const members = [
           isPresidente: true,
         },
         {
-          nome: "Bruno Corrêa",
-          avatarUrl:
-            "/assets/images/membros/marketing/bruno.jpg",
-        },
-        {
           nome: "Gabriel Romualdo",
           avatarUrl:
             "/assets/images/membros/marketing/gabriel.jpg",
@@ -228,29 +226,29 @@ const members = [
             "/assets/images/membros/marketing/marcelo.png",
         },
         {
-          nome: "Daniel",
+          nome: "Daniel Nunes",
           avatarUrl:
             "/assets/images/membros/marketing/daniel.jpeg",
         },
         {
-          nome: "Maria Luiza",
+          nome: "Maria Luiza Tavares",
           avatarUrl:
             "/assets/images/membros/marketing/maria luiza.jpeg",
         },
         {
-          nome: "Nicolas",
+          nome: "Nicolas Mafei",
           avatarUrl:
             "/assets/images/membros/marketing/nicolas.jpeg",
         },
         {
-          nome: "Renan",
+          nome: "Renan Rodrigues",
           avatarUrl:
             "/assets/images/membros/marketing/renan.jpeg",
         },
         {
-          nome: "Wesley",
+          nome: "Samuel Germiniani",
           avatarUrl:
-            "/assets/images/membros/marketing/wesley.jpeg",
+            "/assets/images/membros/marketing/samuel.jpeg", 
         },
       ],
     },
@@ -258,7 +256,7 @@ const members = [
       area: "Projetos",
       members: [
         {
-          nome: "Raissa",
+          nome: "Raissa Toassa",
           avatarUrl: "/assets/images/membros/projetos/raissa.png",
           isPresidente: true,
         },
@@ -283,8 +281,8 @@ const members = [
           avatarUrl: "/assets/images/membros/projetos/pedro kenwa.jpeg",  
         },
         {
-          nome: "Isadora Viveiros",
-          avatarUrl: "/assets/images/membros/projetos/isadora viveiros.jpeg",  
+          nome: "Kaue Samuel Oliveira",
+          avatarUrl: "/assets/images/membros/projetos/kaue.jpeg",  
         },
       ],
     },
