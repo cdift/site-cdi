@@ -43,6 +43,7 @@ const members = [
         {
           nome: "Matheus Nascimento",
           avatarUrl: "/assets/images/membros/presidencia/file.jpg",
+          isVice: true,
         },
       ],
     },
@@ -58,6 +59,7 @@ const members = [
         {
           nome: "João Pedro Mamede",
           avatarUrl: "/assets/images/membros/assuntos_academicos/moskitao.jpeg",
+          isVice: true,
         },
         {
           nome: "Gabriela Nogueira",
@@ -89,6 +91,7 @@ const members = [
           nome: "Lucas de Oliveira",
           avatarUrl:
             "/assets/images/membros/eventos/lucas.png",
+            isVice: true,
         },
         {
           nome: "Gabriel Sorensen",
@@ -137,12 +140,9 @@ const members = [
           isPresidente: true,
         },
         {
-          nome: "Beatriz Galvao",
-          avatarUrl: "/assets/images/membros/financas/beatriz.jpeg",
-        },
-        {
-          nome: "Nathália Ferrett",
-          avatarUrl: "/assets/images/membros/financas/nathalia.png",
+          nome: "Maria Clara Paulini",
+          avatarUrl: "/assets/images/membros/financas/maria clara paulini.jpeg",
+          isVice: true,
         },
         {
           nome: "Adriano Kenzo Camargo",
@@ -159,10 +159,6 @@ const members = [
         {
           nome: "João Paulo Stradioto",
           avatarUrl: "/assets/images/membros/financas/joao paulo.jpg",
-        },
-        {
-          nome: "Maria Clara Paulini",
-          avatarUrl: "/assets/images/membros/financas/maria clara paulini.jpeg",
         },
       ],
     },
@@ -216,14 +212,15 @@ const members = [
           isPresidente: true,
         },
         {
-          nome: "Gabriel Romualdo",
-          avatarUrl:
-            "/assets/images/membros/marketing/gabriel.jpg",
-        },
-        {
           nome: "Marcelo dos Santos",
           avatarUrl:
             "/assets/images/membros/marketing/marcelo.png",
+            isVice: true,
+        },
+        {
+          nome: "Gabriel Romualdo",
+          avatarUrl:
+            "/assets/images/membros/marketing/gabriel.jpg",
         },
         {
           nome: "Daniel Nunes",
@@ -262,7 +259,8 @@ const members = [
         },
         {
           nome: "Guilherme Ramalho",
-          avatarUrl: "/assets/images/membros/projetos/guilherme.jpeg"
+          avatarUrl: "/assets/images/membros/projetos/guilherme.jpeg",
+          isVice: true,
         },
         {
           nome: "Davie Schimidt",
@@ -440,10 +438,7 @@ const members = [
                 </div>
                 <div className="area-members">
                   {area.members.map((member) => (
-                    <div
-      className={`membro ${member.isPresidente ? 'membro-presidente' : ''}`}
-      key={member.nome}
-    >
+                    <div className={`membro ${member.isPresidente ? 'membro-presidente' : ''} ${member.isVice ? 'membro-vice' : ''}`} key={member.nome}>
                       <AvatarHome
                         src={member.avatarUrl}
                         alt={"Membro da CDI " + member.nome}

@@ -222,3 +222,8 @@ p {
   border: 5px solid #007bff;
   border-radius: 50%;
 }
+
+.membro-vice img {
+  border: 5px solid #ffee00;
+  border-radius: 50%;
+}
