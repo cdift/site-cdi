@@ -49,7 +49,25 @@ body {
 
 .eletivas {
   margin-top: 7rem;
+  
 
+}
+
+.extensao .content p {
+  width: 90%;
+  text-align: justify;
+}
+
+.extensao {
+  margin-top: 7rem;
+
+}
+.extensao #title-extensao h2 {
+  text-align: center;
+  color: #0108f8;
+  margin-bottom: 2rem;
+  font-weight: 710;
+  font-size: 2.1rem;
 }
 
 .maisinformacoes {

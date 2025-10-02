@@ -41,7 +41,22 @@ const GuiaParaIngressantes = () => {
 
                 </div>
             </div>
-
+            <div className="extensao">
+                <div id="title-extensao">
+                 <h2 className="titles-h2">Projetos de Extensão</h2>
+            </div>
+             <div className="content">
+                 <p>Os projetos de extensão são uma excelente oportunidade para aplicar o conhecimento adquirido em sala de aula em situações reais, contribuindo para a sociedade e desenvolvendo habilidades práticas. Eles promovem a interação entre a universidade e a comunidade, permitindo que os alunos atuem em diferentes áreas e contextos, enriquecendo sua formação profissional e cidadã. Ao clicar no botão abaixo, você poderá encontrar mais informações sobre os projetos disponíveis e como participar.</p>
+  </div>
+             <div style={{ width: 400, fontWeight: 'bold', margin: 'auto', marginTop: '1.5rem' }} className="button">
+             <Button
+                 buttonText="Conheça os Projetos de Extensão"
+                fontSize={13}
+                option={0}
+                link="https://docs.google.com/document/d/1T6B1A4koQeG_6_vE9ruzDnBsRqpht40o1UwKLTrWO5Y/edit?usp=sharing"
+    />
+  </div>
+</div>
             <div className="maisinformacoes">
                 <Bigcard button_text={"Clique para entrar no grupo"} cardtitle={"Estágio e Vagas"}
                     text={"Para ficar por dentro das principais vagas na área de tecnologia entre no nosso grupo do WhatsApp"}
