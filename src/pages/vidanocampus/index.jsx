@@ -2,6 +2,7 @@ import Header from "../../components/Header";
 import Button from "../../components/Button";
 import Cardapio from "../../components/Cardapio";
 import penguin from '/assets/images/Pinguim.jpeg'
+import bus from '/assets/images/circular/Horarios.jpg'
 import './style.css'
 import './media.css'
 import Footer from "../../components/Footer";
@@ -74,6 +75,29 @@ const VidaNoCampus = () => {
                             width={400}
                             fontSize={14}
                             link={'https://sistemas.ft.unicamp.br/intercamp/'}
+                            option={1}
+                        />
+                    </div>
+                </article>
+            </div>
+
+            <div id="circular">
+                <article>
+                    <div className="text-content">
+                        <h1>Circular Interno</h1>
+                        <p>
+                            O circular interno é um serviço de transporte gratuito que conecta 
+                            diferentes pontos do campus de Limeira, facilitando o deslocamento 
+                            entre a FT, FCA e demais instalações do campus.
+                        </p>
+                    </div>
+
+                    <div className="buttons">
+                        <Button
+                            buttonText={"Ver horários e rotas"}
+                            width={400}
+                            fontSize={14}
+                            link={'https://prefeituralimeira.unicamp.br/circular-interno'}
                             option={1}
                         />
                     </div>
