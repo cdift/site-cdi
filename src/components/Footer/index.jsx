@@ -1,4 +1,5 @@
-import './style.css';
+import './style.css'
+import './media.css'
 import logoInstagram from '/assets/images/logoInstagramCdi.svg';
 import logoGmailCdi from '/assets/images/logoGmailCdi.svg';
 import logolinkedinCdi from '/assets/images/logolinkedinCdi.svg';
