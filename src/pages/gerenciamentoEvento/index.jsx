@@ -3,7 +3,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import CreateEvent from "./createEvent";
 import EventCard from "./eventCard";
-import EventModal from "./eventModel"; // <--- 1. Importação do Modal (verifique se o nome do arquivo está certo)
+import EventModal from "./eventModel";
 import "./style.css"
 
 const PageEvent = () => { // <--- Componentes React devem começar com Maiúscula
@@ -50,14 +50,12 @@ const PageEvent = () => { // <--- Componentes React devem começar com Maiúscul
               date={evt.date}
               time={evt.time}
               location={evt.location}
-              // <--- 2. Passamos a função aqui para o card poder chamá-la
               onOpenModal={handleOpenModal} 
             />
           ))}
         </div>
       </div>
 
-      {/* <--- 3. O Modal fica aqui. Ele só aparece se isModalOpen for true */}
       <EventModal 
         isOpen={isModalOpen} 
         onClose={handleCloseModal} 
