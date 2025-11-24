@@ -47,7 +47,6 @@ const EventCard = ({ title, date, time, location, onOpenModal }) => {
         </div>
 
         <div className="card-actions">
-          {/* AQUI ESTÁ A ALTERAÇÃO: Adicionado o onClick */}
           <button className="btn-details" onClick={handleDetailsClick}>
             Saiba mais
           </button>
