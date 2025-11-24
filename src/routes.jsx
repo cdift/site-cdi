@@ -6,6 +6,8 @@ import Professores from "./pages/professores";
 import GuiaParaIngressantes from "./pages/guiaparaingressantes";
 import LoginPage from "./pages/login";
 import RedefinirSenhaPage from "./pages/esqueceuSenha";
+import GerenciarEventoPage from "./pages/gerenciamentoEvento"
+
 
 export const router = createBrowserRouter([
   {
@@ -36,4 +38,8 @@ export const router = createBrowserRouter([
     path: "/redefinir_senha",
     element: <RedefinirSenhaPage />,
   },
+  {
+    path: "/gerenciar_evento",
+    element: <GerenciarEventoPage />,
+  }
 ]);
