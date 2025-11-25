@@ -1,0 +1,186 @@
+/* --- Reset Básico e Fontes --- */
+:root {
+  --cor-principal: #4f46e5; /* Um tom de índigo/roxo */
+  --cor-principal-hover: #4338ca;
+  --cor-fundo-app: #f3f4f6; /* Cinza claro */
+  --cor-texto-erro: #ef4444; /* Vermelho */
+  --cor-borda: #d1d5db;
+  --sombra-cartao: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --corTexto: #0108F8;
+  --corBotao: #0108F8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+/* --- Layout Principal --- */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--cor-fundo-app);
+  padding: 1rem;
+}
+
+.login-card {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  min-height: 600px;
+  background-color: #ffffff;
+  border-radius: 1.5rem; /* Bordas bem arredondadas */
+  box-shadow: var(--sombra-cartao);
+  overflow: hidden; /* Para manter as bordas arredondadas nos painéis */
+}
+
+/* --- Painel Esquerdo (Promoção/Boas-vindas) --- */
+.left-panel {
+  flex: 1; /* Ocupa metade do espaço */
+  background-color: var(--cor-principal);
+  color: #ffffff;
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left-panel-h1 {
+    text-align: center;
+  font-size: 1.70rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.left-panel-penguin {
+  font-size: 5rem;
+  margin: 2rem 0;
+  text-align: center;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Animação simples para o pinguim */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.left-panel-p {
+    text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.left-panel-logo img{
+    width: 15%;
+}
+
+/* --- Painel Direito (Formulário) --- */
+.right-panel {
+  flex: 1; /* Ocupa a outra metade */
+  padding: 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Texto de cima do formulário */
+.right-panel-h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color:var(--corTexto) ;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+
+/* Texto de cima do input */
+.form-label {
+  display: block;
+  font-size: 1.0rem;
+  color: var(--corTexto);
+  
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem ;
+  font-size: 1rem;
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid #000000;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+
+.forgot-link {
+  display: block;
+  text-align: right;
+  font-size: 0.875rem;
+  color: var(--cor-principal);
+  text-decoration: none;
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
+  transition: color 0.2s;
+}
+
+.forgot-link:hover {
+  color: var(--cor-principal-hover);
+  text-decoration: underline;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: var(--corBotao);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.submit-btn:hover {
+  background-color: var(--cor-principal-hover);
+}
+
+.submit-btn:active {
+  transform: scale(0.99);
+}
+
+/* --- Mensagens de Erro --- */
+.error-text {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--cor-texto-erro);
+  margin-top: 0.25rem;
+}
+
+.submit-error {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--cor-texto-erro);
+  background-color: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  margin-top: 1.25rem;
+  text-align: center;
+}

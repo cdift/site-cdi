@@ -1,0 +1,107 @@
+    /* Estilos de formulário específicos para a página Redefinir Senha.
+    Copiado de style.css para manter a modularidade.
+    */
+
+    /* Variáveis de cor necessárias para este formulário.
+    Você pode mantê-las aqui ou importá-las de 'style.css' se o seu
+    bundler (como Vite ou Webpack com PostCSS) suportar.
+    */
+    :root {
+    --cor-principal-hover: #4338ca;
+    --cor-texto-erro: #ef4444;
+    --cor-borda: #d1d5db;
+    --corTexto: #0108F8;
+    --corBotao: #0108F8;
+    --corBordaPrincipal: #000000;
+    }
+    /* Imagem */
+    .imgPenguin{
+        justify-content: center;
+        display: flex;
+    }
+
+    .imgPenguin img{
+        width: 30%;
+    }
+
+    .login-card{
+        width: 40%;
+        border: 0.5px solid var(--corBordaPrincipal);
+        border-radius: 0;
+    }
+
+    /* --- Estilos do Formulário --- */
+
+    .form-group {
+    margin-bottom: 3.15rem;
+    }
+
+    .form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--corTexto);
+    margin-bottom: 0.5rem;
+    }
+
+    .form-input {
+    width: 100%;
+    padding: 0.75rem 1.0rem;
+    font-size: 1rem;
+    border: 1px solid var(--cor-borda);
+    border-radius: 0.5rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background-color: #fff; /* Garante fundo branco */
+    color: #111827; /* Garante cor de texto escura */
+    }
+
+    .form-input:focus {
+    outline: none;
+    border-color: var(--cor-principal);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+    }
+
+    .submit-btn {
+    width: 100%;
+    padding: 0.875rem 0.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: var(--corBotao);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+
+    }
+
+    .submit-btn:hover {
+    background-color: var(--cor-principal-hover);
+    }
+
+    .submit-btn:active {
+    transform: scale(0.99);
+    }
+
+    /* --- Mensagens de Erro --- */
+    .error-text {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--cor-texto-erro);
+    margin-top: 0.25rem;
+    }
+
+
+
+
+    .submit-error {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--cor-texto-erro);
+    background-color: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    margin-top: 1.25rem;
+    text-align: center;
+    }

@@ -1,0 +1,82 @@
+
+@media (max-width: 900px) {
+  .login-card {
+    flex-direction: column; /* Empilha os painéis */
+    min-height: auto;
+    max-width: 500px; /* Limita a largura no modo empilhado */
+  }
+
+  .left-panel-p{
+    display: none;
+  }
+
+  .left-panel {
+
+    min-height: 300px;
+    padding: 2rem;
+    flex-basis: 300px; /* Altura fixa */
+    flex-grow: 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .left-panel-penguin {
+    margin: 1.5rem 0;
+  }
+
+  .left-panel-logo {
+    display: none;
+  }
+
+  .right-panel {
+    padding: 9rem 2.5rem;
+  }
+}
+
+/* --- Telemóveis (ex: menos de 500px) --- */
+@media (max-width: 500px) {
+  .app-container {
+    padding: 0;
+  }
+  
+  .login-card {
+    /* Em telemóveis, o cartão ocupa o ecrã todo sem bordas/sombra */
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .left-panel {
+    flex-basis: 250px; /* Altura ainda menor */
+    padding: 1.5rem;
+    justify-content: center;
+  }
+
+  .left-panel-h1 {
+    font-size: 1.75rem;
+  }
+
+  .left-panel-p {
+    font-size: 1rem;
+  }
+
+  .left-panel-penguin {
+    font-size: 3.5rem;
+    margin: 1rem 0;
+  }
+
+  .right-panel {
+    /* Permite que o painel direito cresça para preencher o ecrã */
+    flex-grow: 1;
+    padding: 2rem 1.5rem;
+    justify-content: flex-start; /* Alinha ao topo */
+    padding-top: 2.5rem;
+  }
+
+  .right-panel-h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+}
