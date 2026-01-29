@@ -36,93 +36,64 @@ const members = [
       area: "Presidência",
       members: [
         {
-          nome: "Maria Eduarda Gomes",
-          avatarUrl: "/assets/images/membros/presidencia/duda.jpeg", isPresidente: true,
+          nome: "Leonardo Bonfá",
+          avatarUrl: "/assets/images/membros/presidencia/leozão.jpg", isPresidente: true,
       
         },
         {
-          nome: "Matheus Nascimento",
-          avatarUrl: "/assets/images/membros/presidencia/file.jpg",
+          nome: "Samuel Germiniani",
+          avatarUrl: "/assets/images/membros/presidencia/samuel.jpeg",
           isVice: true,
         },
       ],
     },
     {
-      area: "Assuntos Acadêmicos",
+      area: "Assuntos Acadêmicos e Estudantis",
       members: [
         {
-          nome: "Phillipi Poloni",
+          nome: "Maria Eduarda Gomes",
           avatarUrl:
-            "/assets/images/membros/assuntos_academicos/salsixa.jpg",
+            "/assets/images/membros/assuntos_academicos/Duda.JPG",
             isPresidente: true,
         },
         {
           nome: "João Pedro Mamede",
           avatarUrl: "/assets/images/membros/assuntos_academicos/moskitao.jpeg",
-          isVice: true,
         },
+
         {
-          nome: "Gabriela Nogueira",
+          nome: "Phillipi Poloni",
           avatarUrl:
-            "/assets/images/membros/assuntos_academicos/gabriela.jpeg",
-        },
-        {
-          nome: "Hugo Strassa",
-          avatarUrl:
-            "/assets/images/membros/assuntos_academicos/Hugo.jpeg",
-        },
-        {
-          nome: "Matheus Mastelini",
-          avatarUrl:
-            "/assets/images/membros/assuntos_academicos/Matheus.jpg",
-        },
+            "/assets/images/membros/assuntos_academicos/salsixa.jpg",
+        }
 
       ],
     },
-    {
-      area: "Eventos",
+     {
+      area: "Comunicação e Marketing",
       members: [
         {
-          nome: "Leonardo Bonfá",
-          avatarUrl: "/assets/images/membros/eventos/leo.jpg",
+          nome: "Daniel Matias",
+          avatarUrl: "/assets/images/membros/marketing/daniel.jpeg",
           isPresidente: true,
         },
+      ],
+    },
+    {
+      area: "Eventos e Relações Externas",
+      members: [
         {
-          nome: "Lucas de Oliveira",
+          nome: "Raíssa Souza",
           avatarUrl:
-            "/assets/images/membros/eventos/lucas.png",
-            isVice: true,
+            "/assets/images/membros/eventos/raissa souza.jpeg",
+            isPresidente: true,
         },
         {
-          nome: "Gabriel Sorensen",
-          avatarUrl:
-            "/assets/images/membros/eventos/gabriel.jpeg",
-        },
-        {
-          nome: "Felipe Amadio",
-          avatarUrl:
-            "/assets/images/membros/eventos/felipe amadio.jpeg",
-        },
-        {
-          nome: "Gabriel de Paula",
-          avatarUrl:
-            "/assets/images/membros/eventos/gabs.jpeg",
-        },
-        {
-          nome: "Rafael Ozorio",
+          nome: "Rafael Ozório",
           avatarUrl:
             "/assets/images/membros/eventos/rafael ozorio.jpeg",
         },
-        {
-          nome: "Raissa Souza",
-          avatarUrl:
-            "/assets/images/membros/eventos/raissa souza.jpeg",
-        },
-        {
-          nome: "Erik Amorim",
-          avatarUrl:
-            "/assets/images/membros/eventos/Erik.jpeg",
-        },
+        
         {
           nome: "Thiago Yuiti",
           avatarUrl:
@@ -132,21 +103,13 @@ const members = [
       ],
     },
     {
-      area: "Finanças",
+      area: "Produtos",
       members: [
-        {
-          nome: "Marcos Vinicius Alonso",
-          avatarUrl: "/assets/images/membros/financas/Marcos.jpg",
-          isPresidente: true,
-        },
-        {
-          nome: "Maria Clara Paulini",
-          avatarUrl: "/assets/images/membros/financas/maria clara paulini.jpeg",
-          isVice: true,
-        },
+  
         {
           nome: "Adriano Kenzo Camargo",
           avatarUrl: "/assets/images/membros/financas/adriano.jpeg",
+          isPresidente: true,
         },
         {
           nome: "Isadora Celestino",
@@ -156,131 +119,51 @@ const members = [
           nome: "João Guilherme Fernandes",
           avatarUrl: "/assets/images/membros/financas/joao guilherme.jpeg",
         },
+      
+      ],
+    },
+   
+    {
+      area: "Projetos",
+      members: [
         {
-          nome: "João Paulo Stradioto",
-          avatarUrl: "/assets/images/membros/financas/joao paulo.jpg",
+          nome: "Gabriel Morais",
+          avatarUrl: "/assets/images/membros/projetos/Gabriel-Morais.jpg",  
+          isPresidente: true,
         },
+        {
+          nome: "Rafael Suetsugu",
+          avatarUrl: "/assets/images/membros/projetos/Rafael-Suetsugu.JPG",  
+          isVice: true,
+        },
+       {
+          nome: "Erik Amorim",
+          avatarUrl: "/assets/images/membros/projetos/Erik.jpeg",  
+        },
+        {
+          nome: "Kaue Samuel Oliveira",
+          avatarUrl: "/assets/images/membros/projetos/Kaue.jpeg",  
+        },
+        {
+          nome: "Pedro Kenwa",
+          avatarUrl: "/assets/images/membros/projetos/pedro kenwa.jpeg",  
+        },
+        
+        
       ],
     },
     {
       area: "Recursos Humanos",
       members: [
         {
-          nome: "Laura Russo",
-          avatarUrl:
-            "/assets/images/membros/recursos_humanos/laura.jpg",
-            isPresidente: true,
-        },
-        {
-          nome: "Daniel Rosell",
-          avatarUrl: "/assets/images/membros/recursos_humanos/daniel.jpg",
+          nome: "Maria Luiza Tavares",
+          avatarUrl: "/assets/images/membros/recursos_humanos/maria luiza.jpeg",  
           isPresidente: true,
-        },
-        {
-          nome: "Samuel Rodrigues",
-          avatarUrl:
-            "/assets/images/membros/recursos_humanos/samuel.png",
-        },
-        {
-          nome: "Matheus Vitorio",
-          avatarUrl:
-            "/assets/images/membros/recursos_humanos/matheus vitorio.jpeg",
-        },
-        {
-          nome: "Augusto Carneiro",
-          avatarUrl:
-            "/assets/images/membros/recursos_humanos/augusto carneiro.jpeg",
-        },
-        {
-          nome: "Henrique Carvalho de Mello",
-          avatarUrl:
-            "/assets/images/membros/recursos_humanos/henrique.jpeg",
         },
         {
           nome: "Maria Clara Muharem",
           avatarUrl:
             "/assets/images/membros/recursos_humanos/maria clara muharem.jpeg",
-        },
-      ],
-    },
-    {
-      area: "Marketing",
-      members: [
-        {
-          nome: "Lucas Mota",
-          avatarUrl: "/assets/images/membros/marketing/baianinho.jpg",
-          isPresidente: true,
-        },
-        {
-          nome: "Marcelo dos Santos",
-          avatarUrl:
-            "/assets/images/membros/marketing/marcelo.png",
-            isVice: true,
-        },
-        {
-          nome: "Gabriel Romualdo",
-          avatarUrl:
-            "/assets/images/membros/marketing/gabriel.jpg",
-        },
-        {
-          nome: "Daniel Nunes",
-          avatarUrl:
-            "/assets/images/membros/marketing/daniel.jpeg",
-        },
-        {
-          nome: "Maria Luiza Tavares",
-          avatarUrl:
-            "/assets/images/membros/marketing/maria luiza.jpeg",
-        },
-        {
-          nome: "Nicolas Mafei",
-          avatarUrl:
-            "/assets/images/membros/marketing/nicolas.jpeg",
-        },
-        {
-          nome: "Renan Rodrigues",
-          avatarUrl:
-            "/assets/images/membros/marketing/renan.jpeg",
-        },
-        {
-          nome: "Samuel Germiniani",
-          avatarUrl:
-            "/assets/images/membros/marketing/samuel.jpeg", 
-        },
-      ],
-    },
-    {
-      area: "Projetos",
-      members: [
-        {
-          nome: "Raissa Toassa",
-          avatarUrl: "/assets/images/membros/projetos/raissa.png",
-          isPresidente: true,
-        },
-        {
-          nome: "Guilherme Ramalho",
-          avatarUrl: "/assets/images/membros/projetos/guilherme.jpeg",
-          isVice: true,
-        },
-        {
-          nome: "Davie Schimidt",
-          avatarUrl: "/assets/images/membros/projetos/davie.png",
-        },
-        {
-          nome: "Rafael Suetsugu",
-          avatarUrl: "/assets/images/membros/projetos/Rafael-Suetsugu.JPG",  
-        },
-        {
-          nome: "Gabriel Morais",
-          avatarUrl: "/assets/images/membros/projetos/Gabriel-Morais.jpg",  
-        },
-        {
-          nome: "Pedro Kenwa",
-          avatarUrl: "/assets/images/membros/projetos/pedro kenwa.jpeg",  
-        },
-        {
-          nome: "Kaue Samuel Oliveira",
-          avatarUrl: "/assets/images/membros/projetos/Kaue.jpeg",  
         },
       ],
     },
