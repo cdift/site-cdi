@@ -108,16 +108,16 @@ const members = [
   
         {
           nome: "Adriano Kenzo Camargo",
-          avatarUrl: "/assets/images/membros/financas/adriano.jpeg",
+          avatarUrl: "/assets/images/membros/produtos/adriano.jpeg",
           isPresidente: true,
         },
         {
           nome: "Isadora Celestino",
-          avatarUrl: "/assets/images/membros/financas/isadora celestino.jpeg",
+          avatarUrl: "/assets/images/membros/produtos/isadora celestino.jpeg",
         },
         {
           nome: "João Guilherme Fernandes",
-          avatarUrl: "/assets/images/membros/financas/joao guilherme.jpeg",
+          avatarUrl: "/assets/images/membros/produtos/joao guilherme.jpeg",
         },
       
       ],
