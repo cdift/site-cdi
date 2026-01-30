@@ -27,7 +27,7 @@ const Header = ({ title = "", content = "" }) => {
                 <h2 className="fw-medium">{content}</h2>
               </div>
             </article>
-            <aside className={title == '' && content == '' ? "" : "hidden"}>
+            <aside className={title == '' && content == '' ? "" : "none"}>
               <img src={ricoImage} alt="imagem do pinguim rico" id="penguim"/>
             </aside>
           </div>

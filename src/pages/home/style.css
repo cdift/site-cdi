@@ -107,7 +107,7 @@ p {
 }
 
 #carousel {
-    margin-inline: 5%;
+    margin-inline: 9%;
     width: 80vw;
     margin-top: 100px;
 }
@@ -119,7 +119,6 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     gap: 5rem;
     margin-top: 7rem;
 }
@@ -186,6 +185,7 @@ p {
 
 .areas {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     row-gap: 6rem !important;
     column-gap: 4rem;
@@ -200,7 +200,6 @@ p {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: rem;
 }
 
 .area-title{
@@ -213,8 +212,8 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 90rem;
-    max-width: 1800px;
+    width: 100%;
+    max-width: 1500px;
     gap: 24px;
 }
 

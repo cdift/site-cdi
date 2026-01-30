@@ -30,14 +30,14 @@ export const router = createBrowserRouter([
     path: "/guiaparaingressantes",
     element: <GuiaParaIngressantes/>,
   },
-  {
-    path: "/login",
-    element: <LoginPage />,
-  },
-  {
-    path: "/redefinir_senha",
-    element: <RedefinirSenhaPage />,
-  },
+  // {
+  //   path: "/login",
+  //   element: <LoginPage />,
+  // },
+  // {
+  //   path: "/redefinir_senha",
+  //   element: <RedefinirSenhaPage />,
+  // },
   {
     path: "/gerenciar_evento",
     element: <GerenciarEventoPage />,

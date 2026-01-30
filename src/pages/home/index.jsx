@@ -127,7 +127,7 @@ const members = [
       area: "Projetos",
       members: [
         {
-          nome: "Gabriel Morais",
+          nome: "Gabriel Felix",
           avatarUrl: "/assets/images/membros/projetos/Gabriel-Morais.jpg",  
           isPresidente: true,
         },

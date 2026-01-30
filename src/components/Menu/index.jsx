@@ -14,12 +14,11 @@ import { useEffect, useState } from 'react'
 
 // eslint-disable-next-line react/prop-types
 const Menu = ({forHome='yes'}) => {
-
-    const [windowWidth] = useState(window.innerWidth);
-    const [isOpen, setIsOpen] = useState(windowWidth < 1000 ? false : true);
+   
+    const [isOpen, setIsOpen] = useState(window.innerWidth < 1000 ? false : true);
 
     // eslint-disable-next-line no-unused-vars
-    const [pageName, _] = useState(document.URL)
+    const [pageName] = useState(document.URL)
     const [pageIndicator, setPageIndicator] = useState({
         sobrenos: '',
         eventos: '',
@@ -27,6 +26,37 @@ const Menu = ({forHome='yes'}) => {
         guiaparaingressantes: '',
         vidanocampus: ''
     })
+
+
+    useEffect(() => {
+        const handleResize = () => {
+            if(window.innerWidth > 1000){
+                setIsOpen(true);
+            }
+            else{
+                setIsOpen(false);
+            }
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if(window.innerWidth < 1000){
+                setIsOpen(false);
+            }
+        };
+
+        document.addEventListener('scroll', handleScroll);
+
+        return () => document.removeEventListener('scroll', handleScroll);
+    }, []);
 
     useEffect(() => {
         let page = pageName.split('/')
@@ -86,11 +116,7 @@ const Menu = ({forHome='yes'}) => {
 
 
     function openNavigation() {
-        if (isOpen) {
-            setIsOpen(false);
-        } else {
-            setIsOpen(true);
-        }
+        setIsOpen(!isOpen);
     }
 
     document.addEventListener('scroll', () => {

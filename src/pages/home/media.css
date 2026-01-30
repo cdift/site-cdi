@@ -29,6 +29,6 @@
 
 @media screen and (min-width: 1800px) {
     #tads .curso_texto > h2 {
-        min-width: 800px;
+        min-width: 100px;
     }
 }
