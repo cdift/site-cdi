@@ -61,6 +61,7 @@
     }
 }
 
+
 @media screen and (min-width: 500px) and (max-width: 600px) {
     .homeContentArea h2 {
         font-size: 1.6rem;
@@ -120,7 +121,6 @@
 
     #penguim {
         display: none;
-       
     }
 }
 
