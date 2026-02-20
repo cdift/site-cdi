@@ -77,6 +77,12 @@ const members = [
           avatarUrl: "/assets/images/membros/marketing/daniel.jpeg",
           isPresidente: true,
         },
+
+        {
+          nome: "Thiago Nakaba",
+          avatarUrl: "/assets/images/membros/marketing/Thiago.jpeg",
+          isVice: true,
+        },
       ],
     },
     {
@@ -94,11 +100,6 @@ const members = [
             "/assets/images/membros/eventos/rafael ozorio.jpeg",
         },
         
-        {
-          nome: "Thiago Yuiti",
-          avatarUrl:
-            "/assets/images/membros/eventos/Thiago.jpeg",
-        },
         
       ],
     },
@@ -115,10 +116,7 @@ const members = [
           nome: "Isadora Celestino",
           avatarUrl: "/assets/images/membros/produtos/isadora celestino.jpeg",
         },
-        {
-          nome: "João Guilherme Fernandes",
-          avatarUrl: "/assets/images/membros/produtos/joao guilherme.jpeg",
-        },
+        
       
       ],
     },
