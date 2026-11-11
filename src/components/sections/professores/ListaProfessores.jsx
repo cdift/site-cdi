@@ -12,7 +12,7 @@ export default function ListaProfessores({ busca }) {
   return (
     <section className="gutter mx-auto max-w-page py-12 sm:py-16">
       <p className="mb-6 font-mono text-legenda text-muted" aria-live="polite">
-        {lista.length} de {professores.length} professores
+        {lista.length} {lista.length === 1 ? 'professor' : 'professores'}
         {busca && ` para “${busca}”`}
       </p>
       {lista.length === 0 ? (
