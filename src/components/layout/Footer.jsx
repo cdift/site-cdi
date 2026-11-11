@@ -53,7 +53,7 @@ export default function Footer() {
       <Pinguim
         pose="correndo"
         decorativo
-        className="pointer-events-none absolute top-2.5 left-0 hidden w-24 md:block"
+        className="pointer-events-none absolute top-2.5 left-0 w-24 max-md:!hidden"
       />
       <div className="gutter mx-auto max-w-page pt-[72px] pb-8 md:pt-[124px]">
         <div className="grid gap-12 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)_minmax(0,1fr)]">
