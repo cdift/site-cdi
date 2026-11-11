@@ -1,0 +1,77 @@
+/* Cores do sistema.
+
+   A paleta parte de duas fontes: o azul do CDI, numa versão mais clara (o
+   #0108f8 original fica só no logo), que vira cor de destaque — botões,
+   links, item ativo — em vez de pintar títulos e bordas; e o pinguim mascote, de onde vêm o azul-marinho (corpo), o ciano (círculo) e o
+   laranja (bico). O resto é neutro, para os dados (cardápio, horários) terem
+   contraste e não competirem com a cor.
+
+   1. Paleta: valores brutos. Não use direto nos componentes.
+   2. Cores do tema: o papel de cada cor. São estas que os componentes usam.
+   3. @theme inline: expõe as cores do tema como classes do Tailwind. */
+
+/* 1. Paleta */
+:root {
+  --azul: #2d6ae6; /* azul do CDI clareado; contraste AA com texto branco */
+  --azul-escuro: #1f55c4; /* hover do azul */
+  --azul-claro: #e6eefc; /* fundo de item selecionado */
+  --marinho: #1f3263; /* corpo do pinguim: rodapé e faixas escuras */
+  --marinho-2: #2b4278;
+  --ciano: #6fe0f7; /* círculo atrás do pinguim */
+  --ciano-claro: #dff7fd;
+  --laranja: #f26a1b; /* bico do pinguim: só para "agora" e avisos */
+  --tinta: #121633; /* texto */
+  --tinta-2: #4b5068; /* texto de apoio */
+  --papel: #f4f5f8; /* fundo da página */
+  --papel-2: #eceef4; /* faixas alternadas */
+  --borda: #dfe2eb;
+  --borda-forte: #c3c8d6;
+  --branco: #ffffff;
+}
+
+/* 2. Cores do tema */
+:root {
+  --bg: var(--papel);
+  --bg-2: var(--papel-2);
+  --surface: var(--branco);
+  --fg: var(--tinta);
+  --muted: var(--tinta-2);
+  --line: var(--borda);
+  --line-strong: var(--borda-forte);
+  --accent: var(--azul);
+  --accent-hover: var(--azul-escuro);
+  --accent-soft: var(--azul-claro);
+  --on-accent: var(--branco);
+  --dark: var(--marinho);
+  --dark-2: var(--marinho-2);
+  --on-dark: #e8ebf7;
+  --sky: var(--ciano);
+  --sky-soft: var(--ciano-claro);
+  --alert: var(--laranja);
+  --avatar: #e2e5ee;
+  --sombra-card:
+    0 1px 2px rgba(18, 22, 51, 0.06), 0 8px 24px -12px rgba(18, 22, 51, 0.18);
+}
+
+/* 3. Classes do Tailwind (bg-surface, text-muted, border-line, bg-accent…) */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-2: var(--bg-2);
+  --color-surface: var(--surface);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-soft: var(--accent-soft);
+  --color-on-accent: var(--on-accent);
+  --color-dark: var(--dark);
+  --color-dark-2: var(--dark-2);
+  --color-on-dark: var(--on-dark);
+  --color-sky: var(--sky);
+  --color-sky-soft: var(--sky-soft);
+  --color-alert: var(--alert);
+  --color-avatar: var(--avatar);
+  --shadow-card: var(--sombra-card);
+}

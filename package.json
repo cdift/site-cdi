@@ -1,32 +1,39 @@
 {
-  "name": "reactapp",
+  "name": "site_cdi",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host",
+    "dev": "vite",
     "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "cardapio": "node scripts/atualizar-cardapio.mjs"
   },
   "dependencies": {
-    "bootstrap": "^5.3.3",
-    "react": "^18.2.0",
-    "react-bootstrap": "^2.10.2",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^7.18.2"
+    "@gsap/react": "^2.1.2",
+    "animate.css": "^4.1.1",
+    "axios": "^1.20.0",
+    "gsap": "^3.15.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.4"
   },
   "devDependencies": {
-    "@types/react": "^18.2.37",
-    "@types/react-dom": "^18.2.15",
-    "@vitejs/plugin-react": "^6.0.5",
-    "eslint": "^8.53.0",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.4",
-    "vite": "^8.2.1"
-  },
-  "overrides": {
-  "minimatch": "^3.1.2"
-}
+    "@eslint/js": "^10.0.1",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.1.2",
+    "autoprefixer": "^10.5.4",
+    "eslint": "^10.8.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.3",
+    "globals": "^17.7.0",
+    "postcss": "^8.5.26",
+    "prettier": "^3.9.6",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.3.4"
+  }
 }

@@ -1,0 +1,335 @@
+/* ─────────────────────────────────────────────────────────────────────
+   CDI · catálogo de movimento
+
+   Regras do sistema:
+   1. Uma curva por intenção. Entrar/sair = --ease-saida. Pular = --ease-mola.
+      Loop = --ease-suave. Nunca misture duas curvas no mesmo elemento.
+   2. Movimento explica, não enfeita: entrada de bloco, estado "agora",
+      confirmação. Se tirar a animação e a tela continuar clara, ela é enfeite.
+   3. Anime só transform, opacity, filter e clip-path (barato para a GPU).
+   4. Tudo cai para o estado final com "reduzir movimento" (bloco no fim).
+   5. Sem JS nada some: o estado inicial escondido só vale com html.js.
+
+   Origem de cada efeito:
+     [SIU]  Status Is Up (statusisup.com)  → curva, ticker, sombra de bloco, ponto vivo
+     [SAN]  Sanwa (tochi-sanwa.jp)         → fadein mola, popfade, blurfade, anel, loop de fotos, traço desenhado
+     [CDI]  já existe no site              → useRevelar, glider das abas, barra do menu, acordeão
+   ───────────────────────────────────────────────────────────────────── */
+
+/* ── Entrada ao rolar ─────────────────────────────────────────────────
+   Na página React use useRevelar (GSAP). Em HTML estático, esta versão:
+   um IntersectionObserver põe .is-in quando o bloco aparece (ver
+   cdi-motion.js). O atraso vem de style="--i:2". */
+html.js .rev {
+  opacity: 0;
+  transform: translateY(var(--revelar-y));
+  transition:
+    opacity var(--dur-3) var(--ease-saida),
+    transform var(--dur-3) var(--ease-saida);
+  transition-delay: calc(var(--i, 0) * var(--escalonar));
+}
+html.js .rev.is-in {
+  opacity: 1;
+  transform: none;
+}
+/* [SAN] fadein: sobe 20px e passa um pouco do ponto */
+html.js .rev-mola {
+  opacity: 0;
+  transform: translateY(var(--revelar-y-mola));
+  transition:
+    opacity var(--dur-3) var(--ease-mola),
+    transform var(--dur-3) var(--ease-mola);
+  transition-delay: calc(var(--i, 0) * var(--escalonar));
+}
+html.js .rev-mola.is-in {
+  opacity: 1;
+  transform: none;
+}
+/* [SAN] popfade: cresce a partir da base (bom para o mascote e balões) */
+html.js .rev-pop {
+  opacity: 0;
+  transform: scale(0.8);
+  transform-origin: 65% 100%;
+  transition:
+    opacity var(--dur-3) var(--ease-mola),
+    transform var(--dur-3) var(--ease-mola);
+  transition-delay: calc(var(--i, 0) * var(--escalonar));
+}
+html.js .rev-pop.is-in {
+  opacity: 1;
+  transform: none;
+}
+/* [SAN] blurfade: sai do desfoque (títulos grandes e fotos de abertura) */
+html.js .rev-desfoque {
+  opacity: 0;
+  filter: blur(14px);
+  transition:
+    opacity var(--dur-4) var(--ease-saida),
+    filter var(--dur-4) var(--ease-saida);
+  transition-delay: calc(var(--i, 0) * var(--escalonar));
+}
+html.js .rev-desfoque.is-in {
+  opacity: 1;
+  filter: none;
+}
+
+/* ── Estados "agora" ──────────────────────────────────────────────── */
+/* [SIU] ponto vivo: o laranja do site é só para "agora" e este ponto
+   é o selo oficial disso (servindo, próximo ônibus, inscrições abertas). */
+.ponto-vivo {
+  position: relative;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--alert);
+}
+.ponto-vivo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: var(--alert);
+  animation: cdi-ponto 1.8s var(--ease-saida) infinite;
+}
+@keyframes cdi-ponto {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(3.2);
+    opacity: 0;
+  }
+}
+/* [SAN] anel (shadowOg/Bl): pulso em volta de um botão ou selo.
+   --anel define a cor: style="--anel: 45 106 230" (r g b do azul). */
+.anel {
+  animation: cdi-anel 2.4s var(--ease-saida) infinite;
+}
+@keyframes cdi-anel {
+  0% {
+    box-shadow: 0 0 0 0 rgb(var(--anel, 45 106 230) / 0.35);
+  }
+  70%,
+  100% {
+    box-shadow: 0 0 0 14px rgb(var(--anel, 45 106 230) / 0);
+  }
+}
+
+/* ── Letreiro e faixas que correm ─────────────────────────────────── */
+/* [SIU] ticker e [SAN] loopLeft: duas cópias da lista lado a lado;
+   anima -50% e volta ao início sem corte. Pausa no hover/foco. */
+.letreiro {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+}
+.letreiro-faixa {
+  display: flex;
+  flex-shrink: 0;
+  min-width: 100%;
+  gap: var(--letreiro-gap, 2.5rem);
+  padding-right: var(--letreiro-gap, 2.5rem);
+  animation: cdi-letreiro var(--letreiro-dur, 38s) linear infinite;
+}
+.letreiro:hover .letreiro-faixa,
+.letreiro:focus-within .letreiro-faixa {
+  animation-play-state: paused;
+}
+@keyframes cdi-letreiro {
+  to {
+    transform: translateX(-100%);
+  }
+}
+.letreiro.inverso .letreiro-faixa {
+  animation-direction: reverse;
+}
+
+/* ── Traço desenhado ──────────────────────────────────────────────── */
+/* [SAN] line-animation (Vivus). No React: GSAP DrawSVGPlugin (grátis).
+   Em HTML: pathLength="1" no <path> e a classe .desenhar; .is-in desenha. */
+.desenhar path,
+.desenhar line,
+.desenhar polyline {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  transition: stroke-dashoffset 0.9s var(--ease-saida) 0.25s;
+}
+.desenhar.is-in path,
+.desenhar.is-in line,
+.desenhar.is-in polyline {
+  stroke-dashoffset: 0;
+}
+html:not(.js) .desenhar path,
+html:not(.js) .desenhar line {
+  stroke-dashoffset: 0;
+}
+
+/* ── Rotação lenta ────────────────────────────────────────────────── */
+/* [SAN] selo "SCROLL DOWN" que gira */
+.girar-lento {
+  animation: cdi-girar 14s linear infinite;
+}
+@keyframes cdi-girar {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ── Mascote (Pingu) ──────────────────────────────────────────────────
+   Cada pose tem UM movimento, escolhido por significado (ver guia do mascote). */
+.pg {
+  display: block;
+  height: auto;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+/* flutuar: pose neutra e de destaque (hero). Sobe e desce 6px. */
+.pg-flutuar {
+  animation: cdi-flutuar var(--dur-loop) var(--ease-suave) infinite;
+}
+@keyframes cdi-flutuar {
+  50% {
+    transform: translateY(-6px);
+  }
+}
+/* balançar: ao passar o mouse, o pinguim "responde" (aceno, joinha, apontando) */
+.pg-balancar {
+  transform-origin: 50% 100%;
+  transition: transform var(--dur-2) var(--ease-mola);
+}
+.pg-balancar:hover,
+*:hover > .pg-balancar {
+  transform: rotate(-4deg) scale(1.04);
+}
+/* respirar: dormindo. Expande 2,5% devagar, como respiração. */
+.pg-respirar {
+  transform-origin: 50% 100%;
+  animation: cdi-respirar 4s var(--ease-suave) infinite;
+}
+@keyframes cdi-respirar {
+  50% {
+    transform: scale(1.025, 1.04);
+  }
+}
+/* espiar: sai da borda quando o bloco aparece (usar com .rev-... não: é próprio).
+   O pai precisa de overflow:hidden e o pinguim fica rente à borda. */
+.pg-espiar {
+  transform: translateX(60%);
+  transition: transform var(--dur-4) var(--ease-mola);
+}
+.is-in .pg-espiar,
+.pg-espiar.is-in {
+  transform: translateX(0);
+}
+/* correr: cruza o contêiner uma vez. Use em "carregando" e transições. */
+.pg-correr {
+  animation: cdi-correr 3.2s var(--ease-suave) infinite;
+}
+@keyframes cdi-correr {
+  0% {
+    transform: translateX(-120%) translateY(0);
+  }
+  25% {
+    transform: translateX(-60%) translateY(-5px);
+  }
+  50% {
+    transform: translateX(0) translateY(0);
+  }
+  75% {
+    transform: translateX(60%) translateY(-5px);
+  }
+  100% {
+    transform: translateX(120%) translateY(0);
+  }
+}
+/* pular: comemorando, uma vez, ao confirmar (toast, inscrição feita) */
+.pg-pular {
+  transform-origin: 50% 100%;
+  animation: cdi-pular 0.7s var(--ease-mola) both;
+}
+@keyframes cdi-pular {
+  0% {
+    transform: translateY(14px) scale(0.85, 1.1);
+    opacity: 0;
+  }
+  55% {
+    transform: translateY(-10px) scale(1.04, 0.97);
+    opacity: 1;
+  }
+  100% {
+    transform: none;
+  }
+}
+
+/* ── Linhas que entram em sequência ───────────────────────────────── */
+/* [SIU] rowIn: cada linha de uma lista/tabela entra com atraso */
+.linha-entra {
+  animation: cdi-linha var(--dur-3) var(--ease-saida) both;
+  animation-delay: calc(var(--i, 0) * 50ms);
+}
+@keyframes cdi-linha {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+}
+/* [SIU] signalRail: barra que enche (progresso do próximo ônibus) */
+.trilho {
+  height: 6px;
+  border-radius: 99px;
+  background: var(--bg-2);
+  overflow: hidden;
+}
+.trilho > span {
+  display: block;
+  height: 100%;
+  width: var(--p, 50%);
+  border-radius: inherit;
+  background: var(--accent);
+  transform-origin: left;
+  animation: cdi-trilho 1.2s var(--ease-saida) both;
+}
+@keyframes cdi-trilho {
+  from {
+    transform: scaleX(0);
+  }
+}
+
+/* ── Reduzir movimento ────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  html.js .rev,
+  html.js .rev-mola,
+  html.js .rev-pop,
+  html.js .rev-desfoque {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+  .desenhar path,
+  .desenhar line {
+    stroke-dashoffset: 0;
+    transition: none;
+  }
+  .letreiro-faixa,
+  .girar-lento,
+  .pg-flutuar,
+  .pg-respirar,
+  .pg-correr,
+  .pg-pular,
+  .anel,
+  .ponto-vivo::after,
+  .linha-entra,
+  .trilho > span {
+    animation: none !important;
+  }
+  .pg-espiar {
+    transform: none;
+    transition: none;
+  }
+  .letreiro {
+    overflow-x: auto;
+  }
+}

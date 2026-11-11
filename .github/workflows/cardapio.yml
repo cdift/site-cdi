@@ -1,0 +1,44 @@
+# Atualiza src/data/cardapio.json com o cardápio do RU e faz commit se mudou.
+# Roda 3 vezes por dia porque a Prefeitura às vezes cadastra o jantar mais tarde.
+# Também pode ser disparado à mão em Actions > Atualizar cardápio > Run workflow.
+name: Atualizar cardápio
+
+on:
+  schedule:
+    # Horários em UTC: 6h, 10h e 15h de Brasília.
+    - cron: '0 9 * * *'
+    - cron: '0 13 * * *'
+    - cron: '0 18 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cardapio
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Ler cardápio da Prefeitura
+        run: npm run cardapio
+
+      - name: Commit se mudou
+        run: |
+          if git diff --quiet -- src/data/cardapio.json; then
+            echo "Cardápio sem mudanças."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add src/data/cardapio.json
+          git commit -m "Atualiza cardápio do RU"
+          git push

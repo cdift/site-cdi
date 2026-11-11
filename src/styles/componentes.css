@@ -1,0 +1,239 @@
+/* Componentes vindos do Uiverse.io (licença MIT — github.com/uiverse-io/galaxy).
+   Cada bloco diz o autor e o arquivo de origem. O que mudou em relação ao
+   original: as cores e medidas passaram a usar os tokens de colors.css e
+   typography.css; o resto (estrutura e comportamento) é o do autor. */
+
+@layer components {
+  /* ── Botão principal ──────────────────────────────────────────────
+     Uiverse.io by AKAspidey01 · Buttons/AKAspidey01_ugly-horse-68.html
+     No hover o texto desliza para a esquerda e a seta sobe para o lugar. */
+  .btn-principal {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 44px;
+    padding: 0 18px;
+    border-radius: 999px;
+    border: none;
+    overflow: hidden;
+    background: var(--accent);
+    color: var(--on-accent);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-corpo-s);
+    transition: background-color 0.3s;
+  }
+  .btn-principal:hover {
+    background: var(--accent-hover);
+  }
+  .btn-principal .btn-texto {
+    transform: translateX(13px);
+    transition-duration: 0.3s;
+  }
+  .btn-principal .btn-icone {
+    display: grid;
+    transform: translateY(35px);
+    transition-duration: 0.3s;
+  }
+  .btn-principal:hover .btn-texto,
+  .btn-principal:focus-visible .btn-texto {
+    transform: translateX(0);
+  }
+  .btn-principal:hover .btn-icone,
+  .btn-principal:focus-visible .btn-icone {
+    transform: translateY(0);
+  }
+  /* Versão clara, para fundo escuro (rodapé, faixa azul-marinho). */
+  .btn-principal.btn-claro {
+    background: var(--surface);
+    color: var(--fg);
+  }
+  .btn-principal.btn-claro:hover {
+    background: var(--sky-soft);
+  }
+
+  /* ── Botão de contorno ────────────────────────────────────────────
+     Uiverse.io by adamgiebl · Buttons/adamgiebl_rude-bear-14.html
+     O contorno se enche de baixo para cima no hover. */
+  .btn-contorno {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 44px;
+    padding: 0 18px;
+    border-radius: 999px;
+    border: 2px solid var(--fg);
+    background: transparent;
+    color: var(--fg);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-corpo-s);
+    box-shadow: inset 0 0 0 0 var(--fg);
+    transition: ease-out 0.4s;
+  }
+  .btn-contorno:hover {
+    color: var(--surface);
+    box-shadow: inset 0 -100px 0 0 var(--fg);
+  }
+  .btn-contorno:active {
+    transform: scale(0.96);
+  }
+
+  /* ── Link com seta ────────────────────────────────────────────────
+     Uiverse.io by alexmaracinaru · Buttons/alexmaracinaru_empty-moose-12.html
+     Sublinhado que cresce da esquerda e seta longa que encosta no texto. */
+  .link-seta {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    color: var(--accent);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-corpo-s);
+  }
+  .link-seta .link-texto {
+    position: relative;
+    padding-bottom: 3px;
+    padding-right: 10px;
+  }
+  .link-seta .link-texto::after {
+    content: '';
+    position: absolute;
+    width: calc(100% - 10px);
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: currentColor;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .link-seta:hover .link-texto::after,
+  .group:hover .link-seta .link-texto::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .link-seta svg {
+    fill: currentColor;
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+  }
+  .link-seta:hover svg,
+  .group:hover .link-seta svg {
+    transform: translateX(0);
+  }
+  .link-seta:active svg {
+    transform: scale(0.9);
+  }
+
+  /* ── Card ─────────────────────────────────────────────────────────
+     Uiverse.io by Sujitkavaiya · Cards/Sujitkavaiya_mighty-pig-81.html
+     Fundo branco, sombra leve e borda que fica azul no hover. */
+  .card {
+    background: var(--surface);
+    border-radius: 1rem;
+    box-shadow: 0.3em 0.3em 0.7em #00000012;
+    border: 0.15em solid var(--line);
+    transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .card.card-interativo:hover,
+  .card.card-interativo:focus-visible {
+    border-color: var(--accent);
+  }
+
+  /* ── Abas ─────────────────────────────────────────────────────────
+     Uiverse.io by Pradeepsaranbishnoi · Radio-buttons/Pradeepsaranbishnoi_heavy-dragonfly-92.html
+     Pílula branca com um "glider" azul-claro que desliza até a aba ativa.
+     O original tem largura fixa por aba; aqui a posição e a largura do
+     glider vêm do JavaScript (Abas.jsx), porque os rótulos têm tamanhos
+     diferentes. */
+  .abas {
+    display: inline-flex;
+    position: relative;
+    background-color: var(--surface);
+    box-shadow:
+      0 0 1px 0 rgba(45, 106, 230, 0.15),
+      0 6px 12px 0 rgba(45, 106, 230, 0.15);
+    padding: 0.4rem;
+    border-radius: 99px;
+  }
+  .abas .aba {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 36px;
+    padding: 0 16px;
+    font-family: var(--font-display);
+    font-size: var(--text-corpo-s);
+    font-weight: 600;
+    color: var(--fg);
+    white-space: nowrap;
+    border-radius: 99px;
+    transition: color 0.15s ease-in;
+  }
+  .abas .aba[aria-selected='true'] {
+    color: var(--accent);
+  }
+  .abas .glider {
+    position: absolute;
+    top: 0.4rem;
+    bottom: 0.4rem;
+    z-index: 1;
+    background-color: var(--accent-soft);
+    border-radius: 99px;
+    transition: 0.25s ease-out;
+  }
+
+  /* ── Filtro (escolha entre opções que quebram linha) ──────────────
+     Uiverse.io by Yaya12085 · Radio-buttons/Yaya12085_rude-mouse-79.html
+     Caixa cinza; a opção escolhida fica branca e em negrito. */
+  .filtro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    border-radius: 0.6rem;
+    background-color: var(--bg-2);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    font-size: var(--text-corpo-s);
+  }
+  .filtro .opcao {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    padding: 0.45rem 0.8rem;
+    color: var(--muted);
+    transition: all 0.15s ease-in-out;
+  }
+  .filtro .opcao:hover {
+    color: var(--fg);
+  }
+  .filtro .opcao[aria-pressed='true'],
+  .filtro .opcao[aria-current] {
+    background-color: var(--surface);
+    color: var(--fg);
+    font-weight: 600;
+  }
+
+  /* ── Campo de busca ───────────────────────────────────────────────
+     Uiverse.io by JayRamoliya · Inputs/JayRamoliya_loud-rattlesnake-53.html
+     Borda cinza que fica azul com um anel suave quando recebe o foco. */
+  .campo {
+    padding: 10px 14px;
+    border: 2px solid var(--line-strong);
+    border-radius: 999px;
+    font-size: var(--text-corpo);
+    color: var(--fg);
+    background: var(--surface);
+    outline: none;
+  }
+  .campo:focus-within {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 0.2rem rgba(45, 106, 230, 0.25);
+  }
+}
