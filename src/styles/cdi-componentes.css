@@ -1,0 +1,474 @@
+/* ─────────────────────────────────────────────────────────────────────
+   CDI · componentes novos
+
+   Convive com src/styles/componentes.css (Uiverse): .btn-principal,
+   .btn-contorno, .link-seta, .card, .abas, .filtro e .campo continuam como
+   estão. Aqui entra o que os dois sites de referência trouxeram e o site
+   ainda não tinha. A origem de cada bloco está no comentário:
+     [SIU] Status Is Up    [SAN] Sanwa    [CDI] criado para o CDI
+   Só usa tokens (colors.css + cdi-tokens.css). Zero cor solta.
+   Adaptado ao site: sem a faixa letreiro de palavras-chave, sem o acordeão
+   em CSS (o site usa Acordeao.jsx com GSAP) e sem cópia do picote (fica em
+   index.css).
+   ───────────────────────────────────────────────────────────────────── */
+
+@layer components {
+  /* ── Rótulo mono (eyebrow) ─────────────────────────────────────────
+     [SIU] etiqueta em DM Mono caixa alta com ponto; aqui em Overpass Mono.
+     Usado dentro de cards e tabelas (sem o ponto: no site os títulos de
+     seção não levam rótulo em cima). */
+  .rotulo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: var(--font-mono);
+    font-size: var(--text-rotulo, 0.75rem);
+    line-height: 1.3;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .rotulo.agora {
+    color: var(--fg);
+  }
+
+  /* ── Botão de bloco ────────────────────────────────────────────────
+     [SIU] botão com sombra dura que "afunda" no hover/clique.
+     Uso: a ação principal da tela. Só um por tela, junto do .btn-principal
+     (nunca no lugar dele em formulários longos). */
+  .btn-bloco {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    height: 48px;
+    padding: 0 22px;
+    border: 2px solid var(--dark);
+    border-radius: var(--raio-pilula);
+    background: var(--accent);
+    color: var(--on-accent);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-corpo-s, 0.9375rem);
+    box-shadow: var(--sombra-bloco);
+    transition:
+      transform var(--dur-1) var(--ease-saida),
+      box-shadow var(--dur-1) var(--ease-saida),
+      background-color var(--dur-1) var(--ease-saida);
+  }
+  .btn-bloco:hover {
+    transform: translate(3px, 3px);
+    box-shadow: var(--sombra-bloco-hover);
+    background: var(--accent-hover);
+  }
+  .btn-bloco:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0 0 0 var(--dark);
+  }
+  .btn-bloco.claro {
+    background: var(--surface);
+    color: var(--fg);
+    box-shadow: 4px 4px 0 var(--sky);
+    border-color: var(--surface);
+  }
+  .btn-bloco.claro:hover {
+    background: var(--sky-soft);
+    box-shadow: 1px 1px 0 var(--sky);
+  }
+
+  /* ── Selos (chips de estado) ───────────────────────────────────────
+     Substituem os "rounded-full bg-… font-mono" soltos. O laranja de fundo
+     leva texto escuro: texto branco em #f26a1b dá só 3,1:1 (reprova AA). */
+  .selo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.28rem 0.7rem;
+    border-radius: var(--raio-pilula);
+    font-family: var(--font-mono);
+    font-size: var(--text-rotulo, 0.75rem);
+    line-height: 1.3;
+    letter-spacing: 0.04em;
+    background: var(--bg-2);
+    color: var(--fg);
+    white-space: nowrap;
+  }
+  .selo[hidden] {
+    display: none;
+  }
+  .selo-agora {
+    background: var(--laranja-claro);
+    color: var(--fg);
+  }
+  .selo-novo {
+    background: var(--faisca);
+    color: var(--fg);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .selo-ok {
+    background: var(--sucesso-claro);
+    color: var(--sucesso);
+  }
+  .selo-erro {
+    background: var(--erro-claro);
+    color: var(--erro);
+  }
+  .selo-info {
+    background: var(--sky-soft);
+    color: var(--dark);
+  }
+
+  /* ── Card em destaque ──────────────────────────────────────────────
+     [SIU] card com sombra de bloco. O .card normal (Uiverse) continua
+     sendo o padrão; este é para UM destaque por seção (ex.: processo seletivo). */
+  .card-bloco {
+    background: var(--surface);
+    border: 2px solid var(--dark);
+    border-radius: var(--raio-2);
+    box-shadow: var(--sombra-bloco);
+  }
+
+  /* ── Balão de fala do pinguim ──────────────────────────────────────
+     [SAN] balões flutuantes sobre as fotos do herói; [CDI] com o Pingu.
+     O rabinho aponta para baixo-esquerda; .dir espelha. */
+  .balao {
+    position: relative;
+    display: inline-block;
+    max-width: 22ch;
+    padding: 0.7rem 1rem;
+    border: 2px solid var(--dark);
+    border-radius: 1.1rem 1.1rem 1.1rem 0.3rem;
+    background: var(--surface);
+    color: var(--fg);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-corpo-s, 0.9375rem);
+    line-height: 1.25;
+    box-shadow: 3px 3px 0 var(--dark);
+  }
+  .balao::after {
+    content: '';
+    position: absolute;
+    left: 22px;
+    bottom: -9px;
+    width: 14px;
+    height: 14px;
+    background: inherit;
+    border-right: 2px solid var(--dark);
+    border-bottom: 2px solid var(--dark);
+    transform: rotate(45deg) skew(10deg, 10deg);
+  }
+  .balao.dir {
+    border-radius: 1.1rem 1.1rem 0.3rem 1.1rem;
+  }
+  .balao.dir::after {
+    left: auto;
+    right: 22px;
+  }
+  .balao.faisca {
+    background: var(--faisca);
+  }
+
+  /* ── Selo giratório ────────────────────────────────────────────────
+     [SAN] "SCROLL DOWN" circular que gira em volta de uma seta.
+     Estrutura: <a class="selo-giratorio"><svg class="girar-lento">texto em
+     círculo</svg><span class="seta">↓</span></a> */
+  .selo-giratorio {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    background: var(--dark);
+    color: var(--on-dark);
+    transition: transform var(--dur-2) var(--ease-mola);
+  }
+  .selo-giratorio:hover {
+    transform: scale(1.06);
+  }
+  .selo-giratorio svg.girar-lento {
+    position: absolute;
+    inset: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    fill: currentColor;
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.2em;
+  }
+  .selo-giratorio .seta {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--sky);
+    color: var(--dark);
+  }
+
+  /* ── Tabela de dados ───────────────────────────────────────────────
+     [SAN] tabela comparativa; [SIU] números em mono.
+     Primeira coluna fixa no celular; zebra só em hover. */
+  .tabela-dados {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--raio-2);
+    overflow: hidden;
+    font-size: var(--text-corpo-s, 0.9375rem);
+  }
+  .tabela-dados th,
+  .tabela-dados td {
+    padding: 0.9rem 1.1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--line);
+  }
+  .tabela-dados thead th {
+    background: var(--bg-2);
+    font-family: var(--font-mono);
+    font-size: var(--text-rotulo, 0.75rem);
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .tabela-dados tbody th {
+    font-weight: 600;
+    color: var(--muted);
+    font-family: var(--font-body);
+  }
+  .tabela-dados td {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+  .tabela-dados tbody tr:last-child > * {
+    border-bottom: 0;
+  }
+  .tabela-dados tbody tr {
+    transition: background-color var(--dur-1) var(--ease-saida);
+  }
+  .tabela-dados tbody tr:hover {
+    background: var(--accent-soft);
+  }
+  /* ◎ ○ △ (Sanwa): avaliação rápida em tabelas de "qual combina" */
+  .marca {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+  .marca-forte {
+    color: var(--accent);
+  }
+  .marca-media {
+    color: var(--fg);
+  }
+  .marca-fraca {
+    color: var(--muted);
+  }
+
+  /* ── Foto em arco ─────────────────────────────────────────────────
+     [SAN] imagens com topo arredondado; [CDI] já usada em "Sobre". */
+  .foto-arco {
+    border-radius: var(--arco);
+    object-fit: cover;
+  }
+  .foto-redonda {
+    border-radius: var(--raio-3);
+    object-fit: cover;
+  }
+
+  /* ── Número grande ────────────────────────────────────────────────
+     [SIU] blocos de estatística. Mono + tabular para o contador não tremer. */
+  .numero-grande {
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+    font-size: var(--text-titulo-1);
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+
+  /* ── Barra inferior (celular) ─────────────────────────────────────
+     [SAN] barra fixa com 4 atalhos + menu, no rodapé da tela. Aparece só
+     abaixo de 768px; o cabeçalho deixa de esconder ao rolar nessa largura. */
+  .barra-inferior {
+    position: fixed;
+    inset: auto 0 0 0;
+    z-index: 40;
+    display: none;
+    grid-template-columns: repeat(5, 1fr);
+    background: var(--surface);
+    border-top: 1px solid var(--line-strong);
+    padding-bottom: env(safe-area-inset-bottom, 0);
+    box-shadow: 0 -8px 24px -16px rgba(18, 22, 51, 0.35);
+  }
+  .barra-inferior a,
+  .barra-inferior button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    min-height: 58px;
+    font-family: var(--font-display);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    color: var(--muted);
+    border-right: 1px solid var(--line);
+    transition: color var(--dur-1) var(--ease-saida);
+  }
+  .barra-inferior > :last-child {
+    border-right: 0;
+  }
+  .barra-inferior [aria-current='page'] {
+    color: var(--accent);
+    box-shadow: inset 0 3px 0 var(--accent);
+  }
+  @media (max-width: 767px) {
+    .barra-inferior {
+      display: grid;
+    }
+    body {
+      padding-bottom: 64px;
+    }
+  }
+
+  /* ── Aviso (toast) com o Pingu ────────────────────────────────────
+     [CDI] confirmações curtas ("e-mail copiado"). Entra por baixo, some em 3 s. */
+  .toast {
+    position: fixed;
+    left: 50%;
+    bottom: 1.5rem;
+    z-index: 60;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.55rem 1.1rem 0.55rem 0.6rem;
+    background: var(--surface);
+    border: 2px solid var(--dark);
+    border-radius: var(--raio-pilula);
+    box-shadow: var(--sombra-bloco);
+    font-family: var(--font-display);
+    font-weight: 700;
+    transform: translate(-50%, 140%);
+    opacity: 0;
+    transition:
+      transform var(--dur-3) var(--ease-mola),
+      opacity var(--dur-2) var(--ease-saida);
+    pointer-events: none;
+  }
+  .toast.visivel {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+  .toast img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  @media (max-width: 767px) {
+    .toast {
+      bottom: 5rem;
+    }
+  }
+
+  /* ── Estado vazio ─────────────────────────────────────────────────
+     [CDI] qualquer lista sem itens: eventos, resultados, vagas.
+     Pingu (pose do contexto) + 1 frase + 1 ação. Nunca só "nenhum resultado". */
+  .estado-vazio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    border: 2px dashed var(--line-strong);
+    border-radius: var(--raio-2);
+    background: var(--surface);
+  }
+  .estado-vazio h3 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: var(--text-titulo-3);
+  }
+  .estado-vazio p {
+    max-width: 38ch;
+    color: var(--muted);
+    font-size: var(--text-corpo-s);
+  }
+
+  /* ── Chips flutuantes (herói) ─────────────────────────────────────
+     [SAN] rótulos soltos em volta da imagem principal. */
+  .chip-flutuante {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.9rem;
+    border-radius: var(--raio-pilula);
+    background: var(--surface);
+    border: 2px solid var(--dark);
+    box-shadow: 3px 3px 0 var(--dark);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-corpo-s, 0.9375rem);
+    white-space: nowrap;
+  }
+
+  /* ── Sublinhado à mão ─────────────────────────────────────────────
+     [SAN] traço ondulado sob a palavra de destaque; vem de um <svg> com
+     pathLength="1" e a classe .desenhar (ver cdi-motion.css). */
+  .destaque-mao {
+    position: relative;
+    display: inline-block;
+    color: var(--accent);
+  }
+  .destaque-mao > svg {
+    position: absolute;
+    left: -2%;
+    bottom: -0.3em;
+    width: 104%;
+    height: auto;
+    overflow: visible;
+    fill: none;
+    stroke: var(--alert);
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    pointer-events: none;
+  }
+
+  /* ── Faixa de fotos que roda ──────────────────────────────────────
+     [SAN] home_3types--loop_slide (Splide AutoScroll). Fotos em cartões com
+     leve inclinação alternada. Usa .letreiro (cdi-motion.css). */
+  .fotos-roda .letreiro-faixa {
+    --letreiro-gap: 1rem;
+    --letreiro-dur: 60s;
+  }
+  .fotos-roda figure {
+    flex: 0 0 auto;
+    width: clamp(220px, 26vw, 320px);
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    border-radius: var(--raio-3);
+    border: 2px solid var(--dark);
+    transition: transform var(--dur-2) var(--ease-mola);
+  }
+  .fotos-roda figure:nth-child(odd) {
+    transform: rotate(-1.6deg);
+  }
+  .fotos-roda figure:nth-child(even) {
+    transform: rotate(1.4deg) translateY(10px);
+  }
+  .fotos-roda figure:hover {
+    transform: rotate(0) scale(1.03);
+  }
+  .fotos-roda img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

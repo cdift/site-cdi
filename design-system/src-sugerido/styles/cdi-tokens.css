@@ -1,0 +1,70 @@
+/* ─────────────────────────────────────────────────────────────────────
+   CDI · tokens novos (design system v2)
+
+   NÃO substitui src/styles/colors.css: soma a ele. Importe depois dele:
+     @import './styles/colors.css';
+     @import './styles/cdi-tokens.css';     ← este arquivo
+     @import './styles/cdi-motion.css';
+     @import './styles/cdi-componentes.css';
+
+   Tudo que já existe (azul, marinho, ciano, laranja, papel, tinta…) continua
+   igual. Aqui entram só três coisas que o site ainda não tinha:
+     1. cores de apoio tiradas do pinguim e de estados (sucesso, erro, faísca)
+     2. a sombra de bloco (vinda do Status Is Up) e raios
+     3. os tokens de movimento: curvas e durações (Status Is Up + Sanwa)
+   ───────────────────────────────────────────────────────────────────── */
+
+:root {
+  /* 1 · Cores de apoio ------------------------------------------------ */
+  --faisca: #f2b01e; /* amarelo das faíscas e da lâmpada do pinguim: "novo", dica */
+  --laranja-claro: #fde6d4; /* fundo suave do "agora" (laranja só como texto não passa em AA) */
+  --sucesso: #16794c; /* confirmado, copiado, inscrição feita. Texto branco: 5,6:1 */
+  --sucesso-claro: #dcf3e6;
+  --erro: #c2362b; /* falha de verdade (não é o laranja, que é "agora") */
+  --erro-claro: #fbe3e0;
+  --pinguim-corpo: #1f2038; /* contorno e corpo do mascote */
+  --pinguim-barriga: #fbf6f6;
+
+  /* 2 · Forma ---------------------------------------------------------- */
+  --raio-1: 0.5rem; /* campos, chips quadrados */
+  --raio-2: 1rem; /* cards (já é o do .card) */
+  --raio-3: 1.75rem; /* painéis grandes, fotos */
+  --raio-pilula: 999px; /* botões, abas, selos */
+  --arco: 999px 999px 1rem 1rem; /* foto em arco (já usada em "Sobre") */
+
+  /* Sombra de bloco (Status Is Up): deslocada, sem desfoque, na cor da tinta.
+     Usar em UM elemento por tela (o botão principal ou o card em destaque),
+     nunca em tudo. No hover ela "afunda": o elemento anda para dentro dela. */
+  --sombra-bloco: 4px 4px 0 var(--marinho);
+  --sombra-bloco-azul: 4px 4px 0 var(--azul);
+  --sombra-bloco-hover: 1px 1px 0 var(--marinho);
+
+  /* 3 · Movimento ------------------------------------------------------ */
+  --ease-saida: cubic-bezier(0.23, 1, 0.32, 1); /* Status Is Up: rápida e firme. PADRÃO */
+  --ease-mola: cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Sanwa: ultrapassa e volta. Só para o que "pula" */
+  --ease-suave: cubic-bezier(0.45, 0, 0.55, 1); /* loops (flutuar, respirar) */
+  --dur-1: 160ms; /* hover, pressionar */
+  --dur-2: 240ms; /* abrir/fechar, glider */
+  --dur-3: 450ms; /* entrada de bloco ao rolar */
+  --dur-4: 650ms; /* entrada de hero, desfoque */
+  --dur-loop: 3.2s; /* flutuar do mascote */
+  --revelar-y: 12px; /* igual ao useRevelar atual (gsap.from y:12) */
+  --revelar-y-mola: 20px; /* variante Sanwa */
+  --escalonar: 60ms; /* atraso entre itens de uma lista */
+}
+
+/* Tailwind v4: expõe os tokens novos como classes
+   (bg-sucesso, text-erro, shadow-bloco, ease-saida, duration-2…). */
+@theme inline {
+  --color-faisca: var(--faisca);
+  --color-laranja-claro: var(--laranja-claro);
+  --color-sucesso: var(--sucesso);
+  --color-sucesso-claro: var(--sucesso-claro);
+  --color-erro: var(--erro);
+  --color-erro-claro: var(--erro-claro);
+  --shadow-bloco: var(--sombra-bloco);
+  --shadow-bloco-azul: var(--sombra-bloco-azul);
+  --radius-pilula: var(--raio-pilula);
+  --ease-saida: var(--ease-saida);
+  --ease-mola: var(--ease-mola);
+}

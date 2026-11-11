@@ -1,0 +1,110 @@
+@import 'tailwindcss';
+
+@import './styles/colors.css';
+@import './styles/typography.css';
+@import './styles/cdi-tokens.css';
+@import './styles/componentes.css';
+@import './styles/cdi-motion.css';
+@import './styles/cdi-componentes.css';
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px; /* âncoras não ficam embaixo do cabeçalho */
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-body);
+    font-size: var(--text-corpo);
+    line-height: var(--text-corpo--line-height);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  button:not(:disabled),
+  [role='button']:not(:disabled) {
+    cursor: pointer;
+  }
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+  ::selection {
+    background: var(--sky);
+    color: var(--fg);
+  }
+}
+
+@layer components {
+  /* Ícones do Material Symbols (o nome do ícone vai como texto). */
+  .ms {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: 'liga';
+    font-variation-settings: 'wght' 400;
+  }
+  .gutter {
+    padding-left: max(20px, env(safe-area-inset-left, 0px));
+    padding-right: max(20px, env(safe-area-inset-right, 0px));
+  }
+  /* Títulos: Overpass pesada e um pouco fechada (ver typography.css). */
+  .titulo {
+    font-family: var(--font-display);
+    font-weight: 800;
+    letter-spacing: -0.015em;
+  }
+}
+
+@layer components {
+  /* Picote de tíquete: linha tracejada com dois "furos" nas pontas, na cor
+     de fundo de onde o card está (--furo). Usado no card do bandeco. */
+  .picote {
+    position: relative;
+    border-top: 2px dashed var(--line-strong);
+  }
+  .picote::before,
+  .picote::after {
+    content: '';
+    position: absolute;
+    top: -12px;
+    width: 22px;
+    height: 22px;
+    border-radius: 999px;
+    background: var(--furo, var(--surface));
+  }
+  .picote::before {
+    left: -12px;
+  }
+  .picote::after {
+    right: -12px;
+  }
+}
