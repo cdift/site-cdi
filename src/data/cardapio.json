@@ -2,51 +2,6 @@
   "cafe": "Pão Francês, Margarina, Geleia e Fruta. Leite, Café, Achocolatado.",
   "dias": [
     {
-      "data": "2026-11-12",
-      "rotulo": "Qui",
-      "dia": "12/11",
-      "almoco": {
-        "padrao": {
-          "acompanhamento": "Arroz e feijão",
-          "principal": "Carne de panela ao molho de azeitona",
-          "guarnicao": "Repolho na salsa",
-          "salada": "Beterraba ralada",
-          "sobremesa": "Banana prata",
-          "refresco": "Caju",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        },
-        "vegano": {
-          "acompanhamento": "Arroz integral e feijão",
-          "principal": "Picadinho de PTS em cubos com mandioca e espinafre",
-          "guarnicao": "Repolho na salsa",
-          "salada": "Beterraba ralada",
-          "sobremesa": "Banana prata",
-          "refresco": "Caju",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        }
-      },
-      "jantar": {
-        "padrao": {
-          "acompanhamento": "Arroz e feijão",
-          "principal": "Frango ao molho mostarda",
-          "guarnicao": "Abobrinha ao alho",
-          "salada": "Cenoura ralada",
-          "sobremesa": "Maçã gala",
-          "refresco": "Caju",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        },
-        "vegano": {
-          "acompanhamento": "Arroz integral e feijão",
-          "principal": "Almondega de soja ao sugo",
-          "guarnicao": "Abobrinha ao alho",
-          "salada": "Cenoura ralada",
-          "sobremesa": "Maçã gala",
-          "refresco": "Caju",
-          "nota": "Contém glúten no pão e na almondega de soja. Não contém ovos e lactose."
-        }
-      }
-    },
-    {
       "data": "2026-11-13",
       "rotulo": "Sex",
       "dia": "13/11",
