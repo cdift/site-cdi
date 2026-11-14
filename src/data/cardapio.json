@@ -2,51 +2,6 @@
   "cafe": "Pão Francês, Margarina, Geleia e Fruta. Leite, Café, Achocolatado.",
   "dias": [
     {
-      "data": "2026-11-13",
-      "rotulo": "Sex",
-      "dia": "13/11",
-      "almoco": {
-        "padrao": {
-          "acompanhamento": "Arroz e feijão",
-          "principal": "Cubos suínos ao molho vinagrete",
-          "guarnicao": "Virado de banana",
-          "salada": "Acelga com rabanete",
-          "sobremesa": "Maçã gala",
-          "refresco": "Manga",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        },
-        "vegano": {
-          "acompanhamento": "Arroz integral e feijão",
-          "principal": "Ervilha napotilana (tomate, cebola e pimentão)",
-          "guarnicao": "Virado de banana",
-          "salada": "Acelga com rabanete",
-          "sobremesa": "Maçã gala",
-          "refresco": "Manga",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        }
-      },
-      "jantar": {
-        "padrao": {
-          "acompanhamento": "Arroz e feijão",
-          "principal": "Cubos de patinho ao molho roty",
-          "guarnicao": "Mandioca na salsa",
-          "salada": "Tomate",
-          "sobremesa": "Laranja",
-          "refresco": "Manga",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        },
-        "vegano": {
-          "acompanhamento": "Arroz integral e feijão",
-          "principal": "Grão de bidco com abóbora e couve flor",
-          "guarnicao": "Mandioca na salsa",
-          "salada": "Tomate",
-          "sobremesa": "Laranja",
-          "refresco": "Manga",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        }
-      }
-    },
-    {
       "data": "2026-11-14",
       "rotulo": "Sáb",
       "dia": "14/11",
@@ -76,7 +31,7 @@
           "acompanhamento": "Arroz e feijão",
           "principal": "Moqueca de tilápia",
           "guarnicao": "Couve refogada",
-          "salada": "Alface",
+          "salada": "Tomate",
           "sobremesa": "Maçã fuji",
           "refresco": "Maracujá",
           "nota": "Contém glúten no pão. Não contém ovos e lactose."
@@ -85,7 +40,7 @@
           "acompanhamento": "Arroz integral e feijão",
           "principal": "Soja em grão com azeitona, tomate e chuchu",
           "guarnicao": "Couve refogada",
-          "salada": "Alface",
+          "salada": "Tomate",
           "sobremesa": "Maçã fuji",
           "refresco": "Maracujá",
           "nota": "Contém glúten no pão. Não contém ovos e lactose."
@@ -102,7 +57,7 @@
           "acompanhamento": "Arroz e feijão",
           "principal": "Sassami ao molho sugo",
           "guarnicao": "Abobrinha na salsa",
-          "salada": "Tomate",
+          "salada": "Alface",
           "sobremesa": "Laranja",
           "refresco": "Morango",
           "nota": "Contém glúten no pão. Não contém ovos e lactose."
@@ -111,7 +66,7 @@
           "acompanhamento": "Arroz integral e feijão",
           "principal": "Feijão fradinho com abobrinha e cenoura",
           "guarnicao": "Abobrinha na salsa",
-          "salada": "Tomate",
+          "salada": "Alface",
           "sobremesa": "Laranja",
           "refresco": "Morango",
           "nota": "Contém glúten no pão. Não contém ovos e lactose."
