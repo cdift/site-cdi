@@ -2,52 +2,6 @@
   "cafe": "Pão Francês, Margarina, Geleia e Fruta. Leite, Café, Achocolatado.",
   "dias": [
     {
-      "data": "2026-11-14",
-      "rotulo": "Sáb",
-      "dia": "14/11",
-      "fds": true,
-      "almoco": {
-        "padrao": {
-          "acompanhamento": "Arroz e feijão",
-          "principal": "Iscas bovinas aceboladas com shoyu",
-          "guarnicao": "Macarrão alho e óleo",
-          "salada": "Almeirão",
-          "sobremesa": "Banana nanica",
-          "refresco": "Maracujá",
-          "nota": "Contém glúten no pão e no macarrão. Não contém ovos e lactose."
-        },
-        "vegano": {
-          "acompanhamento": "Arroz integral e feijão",
-          "principal": "Grão de bico com mandioquinha, brócolis e tomate",
-          "guarnicao": "Macarrão alho e óleo",
-          "salada": "Almeirão",
-          "sobremesa": "Banana nanica",
-          "refresco": "Maracujá",
-          "nota": "Contém glúten no pão e no macarrão. Não contém ovos e lactose."
-        }
-      },
-      "jantar": {
-        "padrao": {
-          "acompanhamento": "Arroz e feijão",
-          "principal": "Moqueca de tilápia",
-          "guarnicao": "Virado de banana",
-          "salada": "Tomate",
-          "sobremesa": "Maçã fuji",
-          "refresco": "Maracujá",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        },
-        "vegano": {
-          "acompanhamento": "Arroz integral e feijão",
-          "principal": "Soja em grão com azeitona, tomate e chuchu",
-          "guarnicao": "Virado de banana",
-          "salada": "Tomate",
-          "sobremesa": "Maçã fuji",
-          "refresco": "Maracujá",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        }
-      }
-    },
-    {
       "data": "2026-11-15",
       "rotulo": "Dom",
       "dia": "15/11",
@@ -56,7 +10,7 @@
         "padrao": {
           "acompanhamento": "Arroz e feijão",
           "principal": "Sassami ao molho sugo",
-          "guarnicao": "Abobrinha na salsa",
+          "guarnicao": "Abóbora na salsa",
           "salada": "Alface",
           "sobremesa": "Laranja",
           "refresco": "Morango",
@@ -65,10 +19,289 @@
         "vegano": {
           "acompanhamento": "Arroz integral e feijão",
           "principal": "Feijão fradinho com abobrinha e cenoura",
-          "guarnicao": "Abobrinha na salsa",
+          "guarnicao": "Abóbora na salsa",
           "salada": "Alface",
           "sobremesa": "Laranja",
           "refresco": "Morango",
+          "nota": "Contém glúten no pão. Não contém ovos e lactose."
+        }
+      },
+      "jantar": null
+    },
+    {
+      "data": "2026-11-16",
+      "rotulo": "Seg",
+      "dia": "16/11",
+      "almoco": {
+        "padrao": {
+          "acompanhamento": "Arroz e feijão",
+          "principal": "Carne moída com bacon",
+          "guarnicao": "Batatas bravas",
+          "salada": "Beterraba ralada",
+          "sobremesa": "Maçã fuji",
+          "refresco": "Maracujá",
+          "nota": "Contém glúten no pão. Não contém ovos e lactose."
+        },
+        "vegano": {
+          "acompanhamento": "Arroz integral e feijão",
+          "principal": "PTS com ervilha, chuchu e cará",
+          "guarnicao": "Batatas bravas",
+          "salada": "Beterraba ralada",
+          "sobremesa": "Maçã fuji",
+          "refresco": "Maracujá",
+          "nota": "Contém glúten no pão. Não contém ovos e lactose."
+        }
+      },
+      "jantar": {
+        "padrao": {
+          "acompanhamento": "Arroz e feijão",
+          "principal": "Iscas de frango ao molho rosé",
+          "guarnicao": "Brócolis com couve flor ao alho",
+          "salada": "Acelga com rabanete",
+          "sobremesa": "Barra de cereal",
+          "refresco": "Maracujá",
+          "nota": "Contém glúten no pão e na barra de cereal. Não contém ovos e lactose."
+        },
+        "vegano": {
+          "acompanhamento": "Arroz integral e feijão",
+          "principal": "Quibe de grão de bico com berinjela e tomate",
+          "guarnicao": "Brócolis com couve flor ao alho",
+          "salada": "Acelga com rabanete",
+          "sobremesa": "Barra de cereal",
+          "refresco": "Maracujá",
+          "nota": "Contém glúten no pão e na barra de cereal. Não contém ovos e lactose."
+        }
+      }
+    },
+    {
+      "data": "2026-11-17",
+      "rotulo": "Ter",
+      "dia": "17/11",
+      "almoco": {
+        "padrao": {
+          "acompanhamento": "Arroz e feijão",
+          "principal": "Iscas de frango ao shoyu",
+          "guarnicao": "Creme de milho",
+          "salada": "Almeirão",
+          "sobremesa": "Laranja",
+          "refresco": "Morango",
+          "nota": "Contém glúten no pão e no creme de milho. Contém lactose no creme de milho. Não contém ovos."
+        },
+        "vegano": {
+          "acompanhamento": "Arroz integral e feijão",
+          "principal": "Almondega vegana assada",
+          "guarnicao": "Creme de milho vegano",
+          "salada": "Almeirão",
+          "sobremesa": "Laranja",
+          "refresco": "Morango",
+          "nota": "Contém glúten no pão e no creme de milho. Não contém ovos e lactose."
+        }
+      },
+      "jantar": {
+        "padrao": {
+          "acompanhamento": "Arroz e feijão",
+          "principal": "Carne moída à pomodoro",
+          "guarnicao": "Macarrão alho e óleo",
+          "salada": "Couve",
+          "sobremesa": "Maçã Gala",
+          "refresco": "Morango",
+          "nota": "Contém glúten no pão e no macarrão alho e óleo. Contém ovos no macarrão alho e óleo. Não contém lactose."
+        },
+        "vegano": {
+          "acompanhamento": "Arroz integral e feijão",
+          "principal": "Soja com mandioca, cenoura e alho poró",
+          "guarnicao": "Macarrão integral alho e óleo",
+          "salada": "Couve",
+          "sobremesa": "Maçã Gala",
+          "refresco": "Morango",
+          "nota": "Contém glúten no pão e no macarrão integral alho e óleo. Não contém ovos e lactose."
+        }
+      }
+    },
+    {
+      "data": "2026-11-18",
+      "rotulo": "Qua",
+      "dia": "18/11",
+      "almoco": {
+        "padrao": {
+          "acompanhamento": "Arroz e feijão",
+          "principal": "Cubos de patinho com azeitona",
+          "guarnicao": "Chuchu com ervas",
+          "salada": "Acelga",
+          "sobremesa": "Goiabada",
+          "refresco": "Uva",
+          "nota": "Contém glúten no pão. Não contém ovos e lactose."
+        },
+        "vegano": {
+          "acompanhamento": "Arroz integral e feijão",
+          "principal": "Grão de bico com abóbora e tomate",
+          "guarnicao": "Chuchu com ervas",
+          "salada": "Acelga",
+          "sobremesa": "Goiabada",
+          "refresco": "Uva",
+          "nota": "Contém glúten no pão. Não contém ovos e lactose."
+        }
+      },
+      "jantar": {
+        "padrao": {
+          "acompanhamento": "Arroz e feijão",
+          "principal": "Sassami ao molho de laranja",
+          "guarnicao": "Purê de batata",
+          "salada": "Escarola",
+          "sobremesa": "Banana prata",
+          "refresco": "uva",
+          "nota": "Contém glúten no pão. Contém lactose no purê de batata. Não contém ovos."
+        },
+        "vegano": {
+          "acompanhamento": "Arroz integral e feijão",
+          "principal": "Ervilha com couve flor e brócolis",
+          "guarnicao": "Purê de batata vegano",
+          "salada": "Escarola",
+          "sobremesa": "Banana prata",
+          "refresco": "Uva",
+          "nota": "Contém glúten no pão. Não contém ovos e lactose."
+        }
+      }
+    },
+    {
+      "data": "2026-11-19",
+      "rotulo": "Qui",
+      "dia": "19/11",
+      "almoco": {
+        "padrao": {
+          "acompanhamento": "Arroz e feijão",
+          "principal": "Sobrecoxa assada",
+          "guarnicao": "Abobrinha refogada",
+          "salada": "Alface",
+          "sobremesa": "Banana nanica",
+          "refresco": "Cajú",
+          "nota": "Contém glúten no pão. Não contém ovos e lactose."
+        },
+        "vegano": {
+          "acompanhamento": "Arroz integral e feijão",
+          "principal": "Cubos de PTS empanado",
+          "guarnicao": "Abobrinha refogada",
+          "salada": "Alface",
+          "sobremesa": "Banana nanica",
+          "refresco": "Cajú",
+          "nota": "Contém glúten no pão. Não contém ovos e lactose."
+        }
+      },
+      "jantar": {
+        "padrao": {
+          "acompanhamento": "Arroz e feijão",
+          "principal": "Cubos bovinos ao molho rústico",
+          "guarnicao": "Cuscuz de legumes (cenoura, abobrinha, milho, ervilha e tomate)",
+          "salada": "mix de repolho",
+          "sobremesa": "Maçã fuji",
+          "refresco": "Cajú",
+          "nota": "Contém glúten no pão. Não contém ovos e lactose."
+        },
+        "vegano": {
+          "acompanhamento": "Arroz integral e feijão",
+          "principal": "Cubos de pts empanado",
+          "guarnicao": "Cuscuz de legumes (cenoura, abobrinha, milho, ervilha e tomate)",
+          "salada": "Mix de repolho",
+          "sobremesa": "Maçã fuji",
+          "refresco": "Cajú",
+          "nota": "Contém glúten no pão. Não contém ovos e lactose."
+        }
+      }
+    },
+    {
+      "data": "2026-11-20",
+      "rotulo": "Sex",
+      "dia": "20/11",
+      "almoco": {
+        "padrao": {
+          "acompanhamento": "Arroz e feijão",
+          "principal": "Bisteca grelhada",
+          "guarnicao": "Feijão tropeiro",
+          "salada": "Beterraba, cenoura e nabo ralados",
+          "sobremesa": "Laranja",
+          "refresco": "Limão",
+          "nota": "Contém glúten no pão. Não contém ovos e lactose."
+        },
+        "vegano": {
+          "acompanhamento": "Arroz integral e feijão",
+          "principal": "Goulash de legumes (chuchu e cenoura)",
+          "guarnicao": "Feijão tropeiro vegano",
+          "salada": "Beterraba, cenoura e nabo ralados",
+          "sobremesa": "Laranja",
+          "refresco": "Limão",
+          "nota": "Contém glúten no pão. Não contém ovos e lactose."
+        }
+      },
+      "jantar": null
+    },
+    {
+      "data": "2026-11-21",
+      "rotulo": "Sáb",
+      "dia": "21/11",
+      "fds": true,
+      "almoco": {
+        "padrao": {
+          "acompanhamento": "Arroz e feijão",
+          "principal": "Cubos de frango ao molho de mostarda",
+          "guarnicao": "Ravioli de queijo ao sugo",
+          "salada": "Pepino",
+          "sobremesa": "Maçã gala",
+          "refresco": "Abacaxi",
+          "nota": "Contém glúten no pão e no ravioli de queijo. Contém lactose no ravioli de queijo. Contém ovos no ravioli de queijo."
+        },
+        "vegano": {
+          "acompanhamento": "Arroz integral e feijão",
+          "principal": "Ervilha xadrez (acelga, moyashi, tomate e pimentão)",
+          "guarnicao": "Cenoura refogada",
+          "salada": "Pepino",
+          "sobremesa": "Maçã gala",
+          "refresco": "Abacaxi",
+          "nota": "Contém glúten no pão. Não contém ovos e lactose."
+        }
+      },
+      "jantar": {
+        "padrao": {
+          "acompanhamento": "Arroz e feijão",
+          "principal": "Bife de copa lombo ao vinagrete",
+          "guarnicao": "Repolho refogado na salsa",
+          "salada": "Alface",
+          "sobremesa": "Laranja",
+          "refresco": "Abacaxi",
+          "nota": "Contém glúten no pão. Não contém ovos e lactose."
+        },
+        "vegano": {
+          "acompanhamento": "Arroz integral e feijão",
+          "principal": "Grão de bico com abóbora e brócolis",
+          "guarnicao": "repolho refogado na salsa",
+          "salada": "Alface",
+          "sobremesa": "Laranja",
+          "refresco": "Bacaxi",
+          "nota": "Contém glúten no pão. Não contém ovos e lactose."
+        }
+      }
+    },
+    {
+      "data": "2026-11-22",
+      "rotulo": "Dom",
+      "dia": "22/11",
+      "fds": true,
+      "almoco": {
+        "padrao": {
+          "acompanhamento": "Arroz e feijão",
+          "principal": "Iscas de carne acebolada",
+          "guarnicao": "Purê de batata",
+          "salada": "Almeirão com rabanete ralado",
+          "sobremesa": "Banana prata",
+          "refresco": "Tangerina",
+          "nota": "Contém glúten no pão. Contém lactose no purê de batata. Não contém ovos."
+        },
+        "vegano": {
+          "acompanhamento": "Arroz integral e feijão",
+          "principal": "Soja em grãos com azeitona, abóbora e chuchu",
+          "guarnicao": "Purê de batata vegano",
+          "salada": "Almeirão com rabanete ralado",
+          "sobremesa": "Banana prata",
+          "refresco": "Tangerina",
           "nota": "Contém glúten no pão. Não contém ovos e lactose."
         }
       },
