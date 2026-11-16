@@ -2,40 +2,13 @@
   "cafe": "Pão Francês, Margarina, Geleia e Fruta. Leite, Café, Achocolatado.",
   "dias": [
     {
-      "data": "2026-11-15",
-      "rotulo": "Dom",
-      "dia": "15/11",
-      "fds": true,
-      "almoco": {
-        "padrao": {
-          "acompanhamento": "Arroz e feijão",
-          "principal": "Sassami ao molho sugo",
-          "guarnicao": "Abóbora na salsa",
-          "salada": "Alface",
-          "sobremesa": "Laranja",
-          "refresco": "Morango",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        },
-        "vegano": {
-          "acompanhamento": "Arroz integral e feijão",
-          "principal": "Feijão fradinho com abobrinha e cenoura",
-          "guarnicao": "Abóbora na salsa",
-          "salada": "Alface",
-          "sobremesa": "Laranja",
-          "refresco": "Morango",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        }
-      },
-      "jantar": null
-    },
-    {
       "data": "2026-11-16",
       "rotulo": "Seg",
       "dia": "16/11",
       "almoco": {
         "padrao": {
           "acompanhamento": "Arroz e feijão",
-          "principal": "Carne moída com bacon",
+          "principal": "Cubos bovinos com milho e bacon",
           "guarnicao": "Batatas bravas",
           "salada": "Beterraba ralada",
           "sobremesa": "Maçã fuji",
@@ -60,7 +33,7 @@
           "salada": "Acelga com rabanete",
           "sobremesa": "Barra de cereal",
           "refresco": "Maracujá",
-          "nota": "Contém glúten no pão e na barra de cereal. Não contém ovos e lactose."
+          "nota": "Contém glúten no pão, na barra de cereal e nas iscas de frango ao molho rosé. Contém lactose nas iscas de frango ao molho rosé. Não contém ovos."
         },
         "vegano": {
           "acompanhamento": "Arroz integral e feijão",
@@ -69,7 +42,7 @@
           "salada": "Acelga com rabanete",
           "sobremesa": "Barra de cereal",
           "refresco": "Maracujá",
-          "nota": "Contém glúten no pão e na barra de cereal. Não contém ovos e lactose."
+          "nota": "Contém glúten no pão, na barra de cereal e no quibe de grão de bico com berinjela e tomate. Não contém ovos e lactose."
         }
       }
     },
