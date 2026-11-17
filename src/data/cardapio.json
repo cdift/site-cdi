@@ -2,51 +2,6 @@
   "cafe": "Pão Francês, Margarina, Geleia e Fruta. Leite, Café, Achocolatado.",
   "dias": [
     {
-      "data": "2026-11-16",
-      "rotulo": "Seg",
-      "dia": "16/11",
-      "almoco": {
-        "padrao": {
-          "acompanhamento": "Arroz e feijão",
-          "principal": "Cubos bovinos com milho e bacon",
-          "guarnicao": "Batatas bravas",
-          "salada": "Beterraba ralada",
-          "sobremesa": "Maçã fuji",
-          "refresco": "Maracujá",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        },
-        "vegano": {
-          "acompanhamento": "Arroz integral e feijão",
-          "principal": "PTS com ervilha, chuchu e cará",
-          "guarnicao": "Batatas bravas",
-          "salada": "Beterraba ralada",
-          "sobremesa": "Maçã fuji",
-          "refresco": "Maracujá",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        }
-      },
-      "jantar": {
-        "padrao": {
-          "acompanhamento": "Arroz e feijão",
-          "principal": "Iscas de frango ao molho rosé",
-          "guarnicao": "Brócolis com couve flor ao alho",
-          "salada": "Acelga com rabanete",
-          "sobremesa": "Barra de cereal",
-          "refresco": "Maracujá",
-          "nota": "Contém glúten no pão, na barra de cereal e nas iscas de frango ao molho rosé. Contém lactose nas iscas de frango ao molho rosé. Não contém ovos."
-        },
-        "vegano": {
-          "acompanhamento": "Arroz integral e feijão",
-          "principal": "Quibe de grão de bico com berinjela e tomate",
-          "guarnicao": "Brócolis com couve flor ao alho",
-          "salada": "Acelga com rabanete",
-          "sobremesa": "Barra de cereal",
-          "refresco": "Maracujá",
-          "nota": "Contém glúten no pão, na barra de cereal e no quibe de grão de bico com berinjela e tomate. Não contém ovos e lactose."
-        }
-      }
-    },
-    {
       "data": "2026-11-17",
       "rotulo": "Ter",
       "dia": "17/11",
