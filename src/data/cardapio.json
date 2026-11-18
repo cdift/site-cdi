@@ -37,7 +37,7 @@
         },
         "vegano": {
           "acompanhamento": "Arroz integral e feijão",
-          "principal": "Ervilha com couve flor e brócolis",
+          "principal": "Ervilha com couve flor e vagem",
           "guarnicao": "Purê de batata vegano",
           "salada": "Escarola",
           "sobremesa": "Banana prata",
@@ -73,7 +73,7 @@
       "jantar": {
         "padrao": {
           "acompanhamento": "Arroz e feijão",
-          "principal": "Cubos bovinos ao molho rústico",
+          "principal": "Carne moída",
           "guarnicao": "Cuscuz de legumes (cenoura, abobrinha, milho, ervilha e tomate)",
           "salada": "mix de repolho",
           "sobremesa": "Maçã fuji",
