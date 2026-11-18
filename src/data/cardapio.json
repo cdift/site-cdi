@@ -2,51 +2,6 @@
   "cafe": "Pão Francês, Margarina, Geleia e Fruta. Leite, Café, Achocolatado.",
   "dias": [
     {
-      "data": "2026-11-17",
-      "rotulo": "Ter",
-      "dia": "17/11",
-      "almoco": {
-        "padrao": {
-          "acompanhamento": "Arroz e feijão",
-          "principal": "Iscas de frango ao shoyu",
-          "guarnicao": "Creme de milho",
-          "salada": "Almeirão",
-          "sobremesa": "Laranja",
-          "refresco": "Morango",
-          "nota": "Contém glúten no pão e no creme de milho. Contém lactose no creme de milho. Não contém ovos."
-        },
-        "vegano": {
-          "acompanhamento": "Arroz integral e feijão",
-          "principal": "Almondega vegana assada",
-          "guarnicao": "Creme de milho vegano",
-          "salada": "Almeirão",
-          "sobremesa": "Laranja",
-          "refresco": "Morango",
-          "nota": "Contém glúten no pão e no creme de milho. Não contém ovos e lactose."
-        }
-      },
-      "jantar": {
-        "padrao": {
-          "acompanhamento": "Arroz e feijão",
-          "principal": "Carne moída à pomodoro",
-          "guarnicao": "Macarrão alho e óleo",
-          "salada": "Couve",
-          "sobremesa": "Maçã Gala",
-          "refresco": "Morango",
-          "nota": "Contém glúten no pão e no macarrão alho e óleo. Contém ovos no macarrão alho e óleo. Não contém lactose."
-        },
-        "vegano": {
-          "acompanhamento": "Arroz integral e feijão",
-          "principal": "Soja com mandioca, cenoura e alho poró",
-          "guarnicao": "Macarrão integral alho e óleo",
-          "salada": "Couve",
-          "sobremesa": "Maçã Gala",
-          "refresco": "Morango",
-          "nota": "Contém glúten no pão e no macarrão integral alho e óleo. Não contém ovos e lactose."
-        }
-      }
-    },
-    {
       "data": "2026-11-18",
       "rotulo": "Qua",
       "dia": "18/11",
