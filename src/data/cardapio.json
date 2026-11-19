@@ -2,62 +2,17 @@
   "cafe": "Pão Francês, Margarina, Geleia e Fruta. Leite, Café, Achocolatado.",
   "dias": [
     {
-      "data": "2026-11-18",
-      "rotulo": "Qua",
-      "dia": "18/11",
-      "almoco": {
-        "padrao": {
-          "acompanhamento": "Arroz e feijão",
-          "principal": "Cubos de patinho com azeitona",
-          "guarnicao": "Chuchu com ervas",
-          "salada": "Acelga",
-          "sobremesa": "Goiabada",
-          "refresco": "Uva",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        },
-        "vegano": {
-          "acompanhamento": "Arroz integral e feijão",
-          "principal": "Grão de bico com abóbora e tomate",
-          "guarnicao": "Chuchu com ervas",
-          "salada": "Acelga",
-          "sobremesa": "Goiabada",
-          "refresco": "Uva",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        }
-      },
-      "jantar": {
-        "padrao": {
-          "acompanhamento": "Arroz e feijão",
-          "principal": "Sassami ao molho de laranja",
-          "guarnicao": "Purê de batata",
-          "salada": "Escarola",
-          "sobremesa": "Banana prata",
-          "refresco": "uva",
-          "nota": "Contém glúten no pão. Contém lactose no purê de batata. Não contém ovos."
-        },
-        "vegano": {
-          "acompanhamento": "Arroz integral e feijão",
-          "principal": "Ervilha com couve flor e vagem",
-          "guarnicao": "Purê de batata vegano",
-          "salada": "Escarola",
-          "sobremesa": "Banana prata",
-          "refresco": "Uva",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        }
-      }
-    },
-    {
       "data": "2026-11-19",
       "rotulo": "Qui",
       "dia": "19/11",
       "almoco": {
         "padrao": {
           "acompanhamento": "Arroz e feijão",
-          "principal": "Sobrecoxa assada",
+          "principal": "Cubos bovinos",
           "guarnicao": "Abobrinha refogada",
           "salada": "Alface",
           "sobremesa": "Banana nanica",
-          "refresco": "Cajú",
+          "refresco": "Caju",
           "nota": "Contém glúten no pão. Não contém ovos e lactose."
         },
         "vegano": {
@@ -66,7 +21,7 @@
           "guarnicao": "Abobrinha refogada",
           "salada": "Alface",
           "sobremesa": "Banana nanica",
-          "refresco": "Cajú",
+          "refresco": "Caju",
           "nota": "Contém glúten no pão. Não contém ovos e lactose."
         }
       },
@@ -77,7 +32,7 @@
           "guarnicao": "Cuscuz de legumes (cenoura, abobrinha, milho, ervilha e tomate)",
           "salada": "mix de repolho",
           "sobremesa": "Maçã fuji",
-          "refresco": "Cajú",
+          "refresco": "Caju",
           "nota": "Contém glúten no pão. Não contém ovos e lactose."
         },
         "vegano": {
@@ -86,7 +41,7 @@
           "guarnicao": "Cuscuz de legumes (cenoura, abobrinha, milho, ervilha e tomate)",
           "salada": "Mix de repolho",
           "sobremesa": "Maçã fuji",
-          "refresco": "Cajú",
+          "refresco": "Caju",
           "nota": "Contém glúten no pão. Não contém ovos e lactose."
         }
       }
