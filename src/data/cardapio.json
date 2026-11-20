@@ -2,51 +2,6 @@
   "cafe": "Pão Francês, Margarina, Geleia e Fruta. Leite, Café, Achocolatado.",
   "dias": [
     {
-      "data": "2026-11-19",
-      "rotulo": "Qui",
-      "dia": "19/11",
-      "almoco": {
-        "padrao": {
-          "acompanhamento": "Arroz e feijão",
-          "principal": "Cubos bovinos",
-          "guarnicao": "Abobrinha refogada",
-          "salada": "Alface",
-          "sobremesa": "Banana nanica",
-          "refresco": "Caju",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        },
-        "vegano": {
-          "acompanhamento": "Arroz integral e feijão",
-          "principal": "Cubos de PTS empanado",
-          "guarnicao": "Abobrinha refogada",
-          "salada": "Alface",
-          "sobremesa": "Banana nanica",
-          "refresco": "Caju",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        }
-      },
-      "jantar": {
-        "padrao": {
-          "acompanhamento": "Arroz e feijão",
-          "principal": "Carne moída",
-          "guarnicao": "Cuscuz de legumes (cenoura, abobrinha, milho, ervilha e tomate)",
-          "salada": "mix de repolho",
-          "sobremesa": "Maçã fuji",
-          "refresco": "Caju",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        },
-        "vegano": {
-          "acompanhamento": "Arroz integral e feijão",
-          "principal": "Torta de mandioquinha com PTS e cenoura",
-          "guarnicao": "Cuscuz de legumes (cenoura, abobrinha, milho, ervilha e tomate)",
-          "salada": "Mix de repolho",
-          "sobremesa": "Maçã fuji",
-          "refresco": "Caju",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        }
-      }
-    },
-    {
       "data": "2026-11-20",
       "rotulo": "Sex",
       "dia": "20/11",
