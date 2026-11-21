@@ -2,32 +2,6 @@
   "cafe": "Pão Francês, Margarina, Geleia e Fruta. Leite, Café, Achocolatado.",
   "dias": [
     {
-      "data": "2026-11-20",
-      "rotulo": "Sex",
-      "dia": "20/11",
-      "almoco": {
-        "padrao": {
-          "acompanhamento": "Arroz e feijão",
-          "principal": "Bisteca grelhada",
-          "guarnicao": "Feijão tropeiro",
-          "salada": "Beterraba, cenoura e nabo ralados",
-          "sobremesa": "Laranja",
-          "refresco": "Limão",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        },
-        "vegano": {
-          "acompanhamento": "Arroz integral e feijão",
-          "principal": "Goulash de legumes (chuchu e cenoura)",
-          "guarnicao": "Feijão tropeiro vegano",
-          "salada": "Beterraba, cenoura e nabo ralados",
-          "sobremesa": "Laranja",
-          "refresco": "Limão",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        }
-      },
-      "jantar": null
-    },
-    {
       "data": "2026-11-21",
       "rotulo": "Sáb",
       "dia": "21/11",
@@ -40,11 +14,11 @@
           "salada": "Pepino",
           "sobremesa": "Maçã gala",
           "refresco": "Abacaxi",
-          "nota": "Contém glúten no pão e no ravioli de queijo. Contém lactose no ravioli de queijo. Contém ovos no ravioli de queijo."
+          "nota": "Contém glúten no pão e no ravioli de queijo. Contém lactose no ravioli de queijo."
         },
         "vegano": {
           "acompanhamento": "Arroz integral e feijão",
-          "principal": "Ervilha xadrez (acelga, moyashi, tomate e pimentão)",
+          "principal": "Ervilha xadrez (batata e extrato de tomate)",
           "guarnicao": "Cenoura refogada",
           "salada": "Pepino",
           "sobremesa": "Maçã gala",
@@ -55,7 +29,7 @@
       "jantar": {
         "padrao": {
           "acompanhamento": "Arroz e feijão",
-          "principal": "Bife de copa lombo ao vinagrete",
+          "principal": "Bisteca suína ao molho shoyo",
           "guarnicao": "Repolho refogado na salsa",
           "salada": "Alface",
           "sobremesa": "Laranja",
