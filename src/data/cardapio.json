@@ -2,33 +2,6 @@
   "cafe": "Pão Francês, Margarina, Geleia e Fruta. Leite, Café, Achocolatado.",
   "dias": [
     {
-      "data": "2026-11-22",
-      "rotulo": "Dom",
-      "dia": "22/11",
-      "fds": true,
-      "almoco": {
-        "padrao": {
-          "acompanhamento": "Arroz e feijão",
-          "principal": "Iscas de carne acebolada",
-          "guarnicao": "Purê de batata",
-          "salada": "Tomate com rabanete fatiado; mix de legumes cozidos",
-          "sobremesa": "Banana prata",
-          "refresco": "Tangerina",
-          "nota": "Contém glúten no pão. Contém lactose no purê de batata. Não contém ovos."
-        },
-        "vegano": {
-          "acompanhamento": "Arroz integral e feijão",
-          "principal": "Soja em grãos com azeitona, abóbora e chuchu",
-          "guarnicao": "Purê de batata vegano",
-          "salada": "Tomate com rabanete fatiado; mix de legumes cozidos",
-          "sobremesa": "Banana prata",
-          "refresco": "Tangerina",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        }
-      },
-      "jantar": null
-    },
-    {
       "data": "2026-11-23",
       "rotulo": "Seg",
       "dia": "23/11",
@@ -45,17 +18,17 @@
         "vegano": {
           "acompanhamento": "Arroz integral e feijão",
           "principal": "Feijão branco e preto com trigo em grão e quinoa com mandioquinha, tomate meia lua e azeitona",
-          "guarnicao": "Macarrão ao molho sugo",
+          "guarnicao": "Macarrão integral ao molho sugo",
           "salada": "Couve",
           "sobremesa": "Bananada",
           "refresco": "Manga",
-          "nota": "Contém glúten no pão, no prato principal vegano e no macarrão ao molho sugo. Não contém ovos e lactose."
+          "nota": "Contém glúten no pão, no prato principal vegano e no macarrão integral ao molho sugo. Não contém ovos e lactose."
         }
       },
       "jantar": {
         "padrao": {
           "acompanhamento": "Arroz e feijão",
-          "principal": "Tilápia ao melho pesto",
+          "principal": "Tilápia ao molho pesto",
           "guarnicao": "Batata sauté",
           "salada": "Beterraba ralada",
           "sobremesa": "Maçã fugi",
