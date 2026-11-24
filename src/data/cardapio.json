@@ -9,17 +9,17 @@
         "padrao": {
           "acompanhamento": "Arroz e feijão",
           "principal": "Frango assado na mostarda",
-          "guarnicao": "Berinjela à pizzaiolo",
-          "salada": "Escarola",
+          "guarnicao": "Farofa",
+          "salada": "Caponata de berinjela",
           "sobremesa": "Maçã gala",
           "refresco": "Caju",
-          "nota": "Contém glúten no pão. Contém lactose na berinjela à pizzaiolo. Não contém ovos."
+          "nota": "Contém glúten no pão. Não contém ovos e lactose."
         },
         "vegano": {
           "acompanhamento": "Arroz integral e feijão",
           "principal": "Soja em grão com cenoura e brócolis",
-          "guarnicao": "Berinjela refogada",
-          "salada": "Escarola",
+          "guarnicao": "Farofa",
+          "salada": "Caponata de berinjela",
           "sobremesa": "Maçã gala",
           "refresco": "Caju",
           "nota": "Contém glúten no pão. Não contém ovos e lactose."
