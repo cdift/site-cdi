@@ -2,51 +2,6 @@
   "cafe": "Pão Francês, Margarina, Geleia e Fruta. Leite, Café, Achocolatado.",
   "dias": [
     {
-      "data": "2026-11-23",
-      "rotulo": "Seg",
-      "dia": "23/11",
-      "almoco": {
-        "padrao": {
-          "acompanhamento": "Arroz e feijão",
-          "principal": "Carne moída a primavera (milho, ervilha e cebola)",
-          "guarnicao": "Macarrão ao molho sugo",
-          "salada": "Couve",
-          "sobremesa": "Bananada",
-          "refresco": "Manga",
-          "nota": "Contém glúten no pão e no macarrão ao molho sugo. Não contém ovos e lactose."
-        },
-        "vegano": {
-          "acompanhamento": "Arroz integral e feijão",
-          "principal": "Feijão branco e preto com trigo em grão e quinoa com mandioquinha, tomate meia lua e azeitona",
-          "guarnicao": "Macarrão integral ao molho sugo",
-          "salada": "Couve",
-          "sobremesa": "Bananada",
-          "refresco": "Manga",
-          "nota": "Contém glúten no pão, no prato principal vegano e no macarrão integral ao molho sugo. Não contém ovos e lactose."
-        }
-      },
-      "jantar": {
-        "padrao": {
-          "acompanhamento": "Arroz e feijão",
-          "principal": "Tilápia ao molho pesto",
-          "guarnicao": "Batata sauté",
-          "salada": "Beterraba ralada",
-          "sobremesa": "Maçã fugi",
-          "refresco": "Manga",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        },
-        "vegano": {
-          "acompanhamento": "Arroz integral e feijão",
-          "principal": "Mix de lentilha com soja em grão, abóbora, tomate e vagem",
-          "guarnicao": "Batata sauté",
-          "salada": "Beterraba ralada",
-          "sobremesa": "Maçã fuji",
-          "refresco": "Manga",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        }
-      }
-    },
-    {
       "data": "2026-11-24",
       "rotulo": "Ter",
       "dia": "24/11",
