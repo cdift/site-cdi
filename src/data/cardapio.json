@@ -2,51 +2,6 @@
   "cafe": "Pão Francês, Margarina, Geleia e Fruta. Leite, Café, Achocolatado.",
   "dias": [
     {
-      "data": "2026-11-24",
-      "rotulo": "Ter",
-      "dia": "24/11",
-      "almoco": {
-        "padrao": {
-          "acompanhamento": "Arroz e feijão",
-          "principal": "Frango assado na mostarda",
-          "guarnicao": "Farofa",
-          "salada": "Caponata de berinjela",
-          "sobremesa": "Maçã gala",
-          "refresco": "Caju",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        },
-        "vegano": {
-          "acompanhamento": "Arroz integral e feijão",
-          "principal": "Soja em grão com cenoura e brócolis",
-          "guarnicao": "Farofa",
-          "salada": "Caponata de berinjela",
-          "sobremesa": "Maçã gala",
-          "refresco": "Caju",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        }
-      },
-      "jantar": {
-        "padrao": {
-          "acompanhamento": "Arroz e feijão",
-          "principal": "Iscas bovinas ao molho de azeitona",
-          "guarnicao": "Chuchu na salsa",
-          "salada": "Alface com almeirão",
-          "sobremesa": "Laranja",
-          "refresco": "Caju",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        },
-        "vegano": {
-          "acompanhamento": "Arroz integral e feijão",
-          "principal": "Picadinho de PTS com molho de tomate, cebola, abobrinha e cenoura",
-          "guarnicao": "Chuchu na salsa",
-          "salada": "Alface com almeirão",
-          "sobremesa": "Laranja",
-          "refresco": "Caju",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        }
-      }
-    },
-    {
       "data": "2026-11-25",
       "rotulo": "Qua",
       "dia": "25/11",
