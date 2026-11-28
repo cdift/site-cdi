@@ -2,51 +2,6 @@
   "cafe": "Pão Francês, Margarina, Geleia e Fruta. Leite, Café, Achocolatado.",
   "dias": [
     {
-      "data": "2026-11-27",
-      "rotulo": "Sex",
-      "dia": "27/11",
-      "almoco": {
-        "padrao": {
-          "acompanhamento": "Arroz e feijão",
-          "principal": "Bife ao molho de champignon",
-          "guarnicao": "Quibebe",
-          "salada": "Repolho roxo e branco",
-          "sobremesa": "Laranja",
-          "refresco": "Uva",
-          "nota": "Contém glúten no pão. Não contém ovos e lactose."
-        },
-        "vegano": {
-          "acompanhamento": "Arroz integral e feijão",
-          "principal": "Lasanha de berinjela com PTS",
-          "guarnicao": "Quibebe",
-          "salada": "Repolho roxo e branco",
-          "sobremesa": "Laranja",
-          "refresco": "Uva",
-          "nota": "Contém glúten no pão e na lasanha de berinjela. Não contém ovos e lactose."
-        }
-      },
-      "jantar": {
-        "padrao": {
-          "acompanhamento": "Arroz e feijão",
-          "principal": "Sassami ao molho de ervas",
-          "guarnicao": "Creme de milho",
-          "salada": "Alface com agrião",
-          "sobremesa": "Maçã gala",
-          "refresco": "Uva",
-          "nota": "Contém glúten no pão, no prato principal e no creme de milho. Contém lactose no creme de milho. Não contém ovos."
-        },
-        "vegano": {
-          "acompanhamento": "Arroz integral e feijão",
-          "principal": "Torta de grão de bico com cenoura e tomate",
-          "guarnicao": "Creme de milho vegano",
-          "salada": "Alface com agrião",
-          "sobremesa": "Maçã gala",
-          "refresco": "Uva",
-          "nota": "Contém glúten no pão, no prato principal vegano e no creme de milho vegano. Não contém ovos e lactose."
-        }
-      }
-    },
-    {
       "data": "2026-11-28",
       "rotulo": "Sáb",
       "dia": "28/11",
